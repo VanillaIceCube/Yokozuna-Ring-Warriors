@@ -1,0 +1,5 @@
+res://Arenas/game_level.tscn
+res://Characters/main_character.tscn
+res://characters/player.tscn
+res://arenas/arena_01.tscn
+res://characters/player.gd
