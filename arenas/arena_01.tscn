@@ -5,4 +5,5 @@
 [node name="arena_01" type="Node2D"]
 
 [node name="Yokozuna" parent="." instance=ExtResource("1_yuyf3")]
-position = Vector2(46.5926, -5.5079)
+position = Vector2(266, 134)
+lock_rotation = false

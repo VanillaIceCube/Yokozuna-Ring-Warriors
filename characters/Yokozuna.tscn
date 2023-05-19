@@ -372,6 +372,8 @@ transitions = ["idle", "walking", SubResource("AnimationNodeStateMachineTransiti
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_apup0"]
 
 [node name="Yokozuna" type="RigidBody2D"]
+gravity_scale = 0.0
+lock_rotation = true
 script = ExtResource("1_ge5iv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
