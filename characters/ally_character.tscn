@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cnmu0glqfbhyc"]
+[gd_scene load_steps=35 format=3 uid="uid://cnmu0glqfbhyc"]
 
 [ext_resource type="Script" path="res://characters/ally_character.gd" id="1_rnhyu"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_uhcik"]
@@ -182,13 +182,121 @@ tracks/0/keys = {
 "values": [66, 67, 68, 69, 70, 71]
 }
 
+[sub_resource type="Animation" id="Animation_ejnn3"]
+resource_name = "slash_up"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [48, 49, 50, 51]
+}
+
+[sub_resource type="Animation" id="Animation_ddodp"]
+resource_name = "slash_down"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [36, 37, 38, 39]
+}
+
+[sub_resource type="Animation" id="Animation_67hkf"]
+resource_name = "slash_left"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [72, 73, 74, 75]
+}
+
+[sub_resource type="Animation" id="Animation_7r3m2"]
+resource_name = "slash_right"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [42, 43, 44, 45]
+}
+
+[sub_resource type="Animation" id="Animation_xn1yl"]
+resource_name = "death_right"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [54, 55, 56]
+}
+
+[sub_resource type="Animation" id="Animation_porak"]
+resource_name = "death_left"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [78, 79, 80]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0qxvl"]
 _data = {
 "RESET": SubResource("Animation_plkuw"),
+"death_left": SubResource("Animation_porak"),
+"death_right": SubResource("Animation_xn1yl"),
 "idle_down": SubResource("Animation_ecnny"),
 "idle_left": SubResource("Animation_00vvi"),
 "idle_right": SubResource("Animation_my67n"),
 "idle_up": SubResource("Animation_qolyr"),
+"slash_down": SubResource("Animation_ddodp"),
+"slash_left": SubResource("Animation_67hkf"),
+"slash_right": SubResource("Animation_7r3m2"),
+"slash_up": SubResource("Animation_ejnn3"),
 "walk_down": SubResource("Animation_5hf1p"),
 "walk_left": SubResource("Animation_p6wqk"),
 "walk_right": SubResource("Animation_gptnp"),
@@ -284,7 +392,6 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_8625g")
 anim_player = NodePath("../AnimationPlayer")
-active = true
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_apup0")
 parameters/idle/blend_position = Vector2(0.127076, -0.349102)
 parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
