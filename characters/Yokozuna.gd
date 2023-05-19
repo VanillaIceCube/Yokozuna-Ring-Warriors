@@ -1,12 +1,12 @@
 extends RigidBody2D
 
 # Movement related
-@export var move_speed : float = 100
+@export var move_speed : float = 400
 @export var stop_radius : float = 15
-@export var linear_damp_export : float = 1.25
+@export var linear_damp_export : float = 4
 
 # Debugging related
-@export var knock_force : float = 100
+@export var knock_force : float = 400
 
 # Misc
 @export var start_direction : Vector2 = Vector2(0, 1)
