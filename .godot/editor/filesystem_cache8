@@ -1,14 +1,14 @@
 2a60927148abd1d33b818b535e306557
-::res://::1684467277
+::res://::1684471713
 icon.svg::CompressedTexture2D::7610020705067284417::1684275612::1684275622::1::::<><>::
 README.md::TextFile::-1::1684275697::0::1::::<><>::
-::res://arenas/::1684470466
-arena_01.tscn::PackedScene::5146887137837716504::1684470466::0::1::::<><>::uid://cnmu0glqfbhyc
+::res://arenas/::1684471713
+arena_01.tscn::PackedScene::-1::1684471713::0::1::::<><>::uid://beidspd2aboqc
 ::res://assets/::1684276893
 ::res://assets/mystic_woods_free_2.1/::1684276840
 read_me.txt::TextFile::-1::1684276840::0::1::::<><>::
 ::res://assets/mystic_woods_free_2.1/sprites/::1684276840
-::res://assets/mystic_woods_free_2.1/sprites/characters/::1684470430
+::res://assets/mystic_woods_free_2.1/sprites/characters/::1684470679
 player.png::CompressedTexture2D::5482386562429862969::1684470662::1684470679::1::::<><>::
 skeleton.png::CompressedTexture2D::298209066631924514::1684276840::1684276896::1::::<><>::
 slime.png::CompressedTexture2D::1850243662844536411::1684276840::1684276896::1::::<><>::
@@ -47,8 +47,6 @@ wooden.png::CompressedTexture2D::83938680071967793::1684276840::1684276896::1:::
 walls.png::CompressedTexture2D::6007526419584046615::1684276840::1684276896::1::::<><>::
 wooden_door.png::CompressedTexture2D::4764629201965100983::1684276840::1684276896::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4600079659664057082::1684276840::1684276896::1::::<><>::
-::res://characters/::1684470474
-player_old.gd::GDScript::-1::1684288675::0::1::::<>CharacterBody2D<>::
-player_old.tscn::PackedScene::916983359266958393::1684470466::0::1::::<><>::res://characters/ally_character.gd<>uid://ckdydugkce4yv
-ally_character.tscn::PackedScene::5711328185298938214::1684470474::0::1::::<><>::res://characters/ally_character.gd<>uid://ckdydugkce4yv
-ally_character.gd::GDScript::-1::1684469493::0::1::::<>RigidBody2D<>::
+::res://characters/::1684471713
+Yokozuna .gd::GDScript::-1::1684470973::0::1::::<>RigidBody2D<>::
+Yokozuna.tscn::PackedScene::2683906169257774210::1684471721::0::1::::<><>::uid://ckdydugkce4yv<>res://characters/Yokozuna .gd

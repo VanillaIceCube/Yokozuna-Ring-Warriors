@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cflgqj7duru2k"]
+[gd_scene load_steps=2 format=3 uid="uid://poceglpx5tcu"]
 
-[ext_resource type="PackedScene" uid="uid://cnmu0glqfbhyc" path="res://characters/ally_character.tscn" id="1_yuyf3"]
+[ext_resource type="PackedScene" uid="uid://b4stlm6n8t6hq" path="res://characters/Yokozuna.tscn" id="1_yuyf3"]
 
 [node name="arena_01" type="Node2D"]
 
-[node name="ally_character" parent="." instance=ExtResource("1_yuyf3")]
-position = Vector2(46, -11)
+[node name="Yokozuna" parent="." instance=ExtResource("1_yuyf3")]
+position = Vector2(46.5926, -5.5079)
