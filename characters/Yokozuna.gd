@@ -18,6 +18,8 @@ extends RigidBody2D
 
 # More misc variables
 var target_position = get_viewport_rect().size / 2
+var target_direction = (target_position - global_position).normalized()
+var distance_to_target = global_position.distance_to(target_position)
 
 # Initilization tasks
 func _ready():
@@ -27,16 +29,8 @@ func _ready():
 # Main physics loop
 func _physics_process(_delta):
 	
-	# Generates the target_direction based off of the target_position
-	var target_direction = (target_position - global_position).normalized()
-	var distance_to_target = global_position.distance_to(target_position)
-	
-	# If you're near your target_position then your target_direction stops (this will stop the movement forces applied on you)
-	if distance_to_target <= stop_radius:
-		target_direction = Vector2.ZERO
-	
-	# "Walk" towards your target position
-	apply_central_force(target_direction*move_speed)
+	# Handle Walking
+	handle_walk()
 	
 	# Handle animation
 	handle_animation(target_direction)
@@ -44,7 +38,7 @@ func _physics_process(_delta):
 # Whenever an input is pressed
 func _input(event):
 	
-	
+	# Pressing R swings sword
 	if event.is_action_pressed("swing_sword"):
 		print("I have pressed the button")
 		state_machine.travel("slash")
@@ -59,17 +53,24 @@ func _input(event):
 		target_position = get_global_mouse_position()
 		print("Clicked position in world coordinates:", target_position)
 
-# Knock the character in a random direction
-func apply_knock_force():
-	tsukareta += 25 # Simulates damage taken
-	var knock_direction = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
-	var knock_force_vector = knock_direction * knock_force * (1 + tsukareta/100) # multiples knockback by damage taken
-	apply_central_impulse(knock_force_vector)
+# Handles walking for now
+func handle_walk():
+	
+	# Generates the target_direction based off of the target_position
+	target_direction = (target_position - global_position).normalized()
+	distance_to_target = global_position.distance_to(target_position)
+	
+	# This is how we stop
+	if distance_to_target <= stop_radius:
+		target_direction = Vector2.ZERO
+	
+	# "Walk" towards your target position
+	apply_central_force(target_direction*move_speed)
 
 # Handles all animation related code
-func handle_animation(target_direction):
-	update_animation_parameters(target_direction)
-	pick_new_state()
+func handle_animation(direction: Vector2):
+	update_animation_parameters(direction)
+	idle_or_walk()
 
 # Changes the direction that character faces
 func update_animation_parameters(move_input: Vector2):
@@ -80,8 +81,15 @@ func update_animation_parameters(move_input: Vector2):
 		animation_tree.set("parameters/slash/blend_position", move_input)
 
 # Handles animation tree stuff
-func pick_new_state():
+func idle_or_walk():
 	if linear_velocity.length() > 5:
 		state_machine.travel("walking")
 	else:
 		state_machine.travel("idle")
+
+# Knock the character in a random direction
+func apply_knock_force():
+	tsukareta += 25 # Simulates damage taken
+	var knock_direction = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
+	var knock_force_vector = knock_direction * knock_force * (1 + tsukareta/100) # multiples knockback by damage taken
+	apply_central_impulse(knock_force_vector)
