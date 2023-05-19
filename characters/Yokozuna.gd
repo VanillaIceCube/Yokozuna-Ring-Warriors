@@ -5,7 +5,8 @@ extends RigidBody2D
 @export var stop_radius : float = 15
 @export var linear_damp_export : float = 4
 
-# Debugging related
+# Knockback related
+@export var tsukareta : float = 0
 @export var knock_force : float = 400
 
 # Misc
@@ -50,13 +51,14 @@ func _input(event):
 	
 	# When I click on the screen update the target_position
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		target_position = event.position
+		target_position = get_global_mouse_position()
 		print("Clicked position in world coordinates:", target_position)
 
 # Knock the character in a random direction
 func apply_knock_force():
+	tsukareta += 25 # Simulates damage taken
 	var knock_direction = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
-	var knock_force_vector = knock_direction * knock_force
+	var knock_force_vector = knock_direction * knock_force * (1 + tsukareta/100) # multiples knockback by damage taken
 	apply_central_impulse(knock_force_vector)
 
 # Handles all animation related code
@@ -73,7 +75,7 @@ func update_animation_parameters(move_input: Vector2):
 
 # Handles animation tree stuff
 func pick_new_state():
-	if linear_velocity.length() > 15:
+	if linear_velocity.length() > 5:
 		state_machine.travel("walking")
 	else:
 		state_machine.travel("idle")

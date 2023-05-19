@@ -1,10 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1684471713
+::res://::1684475693
 icon.svg::CompressedTexture2D::7610020705067284417::1684275612::1684275622::1::::<><>::
 README.md::TextFile::-1::1684275697::0::1::::<><>::
-::res://arenas/::1684471713
-arena_01.tscn::PackedScene::-1::1684471713::0::1::::<><>::uid://beidspd2aboqc
-::res://assets/::1684276893
+::res://arenas/::1684479460
+arena_01.tscn::PackedScene::1081862853134892836::1684479460::0::1::::<><>::uid://b4stlm6n8t6hq
+::res://assets/::1684479939
 ::res://assets/mystic_woods_free_2.1/::1684276840
 read_me.txt::TextFile::-1::1684276840::0::1::::<><>::
 ::res://assets/mystic_woods_free_2.1/sprites/::1684276840
@@ -47,6 +47,8 @@ wooden.png::CompressedTexture2D::83938680071967793::1684276840::1684276896::1:::
 walls.png::CompressedTexture2D::6007526419584046615::1684276840::1684276896::1::::<><>::
 wooden_door.png::CompressedTexture2D::4764629201965100983::1684276840::1684276896::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4600079659664057082::1684276840::1684276896::1::::<><>::
-::res://characters/::1684471713
-Yokozuna .gd::GDScript::-1::1684470973::0::1::::<>RigidBody2D<>::
-Yokozuna.tscn::PackedScene::2683906169257774210::1684471721::0::1::::<><>::uid://ckdydugkce4yv<>res://characters/Yokozuna .gd
+::res://assets/zughy2/::1684479977
+Boss arena.png::CompressedTexture2D::9011831717022160139::1684479978::1684479982::1::::<><>::
+::res://characters/::1684479631
+Yokozuna.gd::GDScript::-1::1684479586::0::1::::<>RigidBody2D<>::
+Yokozuna.tscn::PackedScene::4460229894169313922::1684479631::0::1::::<><>::res://characters/Yokozuna.gd<>uid://ckdydugkce4yv

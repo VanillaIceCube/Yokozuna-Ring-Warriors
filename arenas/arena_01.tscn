@@ -1,9 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://poceglpx5tcu"]
+[gd_scene load_steps=3 format=3 uid="uid://poceglpx5tcu"]
 
 [ext_resource type="PackedScene" uid="uid://b4stlm6n8t6hq" path="res://characters/Yokozuna.tscn" id="1_yuyf3"]
+[ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="2_8ewhh"]
 
 [node name="arena_01" type="Node2D"]
 
 [node name="Yokozuna" parent="." instance=ExtResource("1_yuyf3")]
-position = Vector2(266, 134)
 lock_rotation = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("2_8ewhh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
