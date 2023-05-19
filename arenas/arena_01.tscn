@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://8l5i7w44mntd"]
+[gd_scene load_steps=2 format=3 uid="uid://cflgqj7duru2k"]
 
-[ext_resource type="PackedScene" uid="uid://6qke1npxsxde" path="res://characters/player.tscn" id="1_slvhf"]
+[ext_resource type="PackedScene" uid="uid://cnmu0glqfbhyc" path="res://characters/ally_character.tscn" id="1_yuyf3"]
 
 [node name="arena_01" type="Node2D"]
 
-[node name="player" parent="." instance=ExtResource("1_slvhf")]
-position = Vector2(354, 217)
+[node name="ally_character" parent="." instance=ExtResource("1_yuyf3")]
+position = Vector2(46, -11)
