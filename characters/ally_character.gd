@@ -9,6 +9,7 @@ extends RigidBody2D
 func _ready():
 	update_animation_parameters(start_direction)
 	gravity_scale = 0
+	angular_velocity = 0
 
 func _physics_process(_delta):
 	# get input direction
@@ -16,7 +17,8 @@ func _physics_process(_delta):
 		Input.get_action_strength("right") - Input.get_action_strength("left"),
 		Input.get_action_strength("down") - Input.get_action_strength("up")
 	)
-
+	
+	# handle animation
 	update_animation_parameters(input_direction)
 
 	# update velocity
@@ -25,8 +27,6 @@ func _physics_process(_delta):
 	# move and slide function uses velocity of character body to move character on map
 	pick_new_state()
 	
-	
-
 func update_animation_parameters(move_input : Vector2):
 	# Don't change animation parameters if there is no move input
 	if(move_input != Vector2.ZERO):
