@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://b4stlm6n8t6hq"]
+[gd_scene load_steps=50 format=3 uid="uid://b4stlm6n8t6hq"]
 
 [ext_resource type="Script" path="res://characters/Yokozuna.gd" id="1_ge5iv"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_uhcik"]
@@ -37,7 +37,6 @@ tracks/1/keys = {
 [sub_resource type="Animation" id="Animation_porak"]
 resource_name = "death_left"
 length = 0.3
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -54,7 +53,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_xn1yl"]
 resource_name = "death_right"
 length = 0.3
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -299,6 +297,31 @@ _data = {
 "walk_up": SubResource("Animation_njmrh")
 }
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3is7s"]
+animation = &"death_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lb1b6"]
+animation = &"death_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8tixi"]
+animation = &"death_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4lb47"]
+animation = &"death_right"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_rdw6s"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_3is7s")
+blend_point_0/pos = Vector2(-1, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_lb1b6")
+blend_point_1/pos = Vector2(1, 0)
+blend_point_2/node = SubResource("AnimationNodeAnimation_8tixi")
+blend_point_2/pos = Vector2(-0.1, -1.1)
+blend_point_3/node = SubResource("AnimationNodeAnimation_4lb47")
+blend_point_3/pos = Vector2(0.1, 1.1)
+min_space = Vector2(-1, -1.1)
+max_space = Vector2(1, 1.1)
+blend_mode = 1
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xc2b5"]
 animation = &"idle_up"
 
@@ -391,14 +414,24 @@ advance_mode = 2
 switch_mode = 2
 advance_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ky31w"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_23q3x"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_h5rmj"]
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_8625g"]
+states/death/node = SubResource("AnimationNodeBlendSpace2D_rdw6s")
+states/death/position = Vector2(363, 20)
 states/idle/node = SubResource("AnimationNodeBlendSpace2D_fmjj1")
 states/idle/position = Vector2(363, 100)
 states/slash/node = SubResource("AnimationNodeBlendSpace2D_mi8rl")
 states/slash/position = Vector2(363, 200)
 states/walking/node = SubResource("AnimationNodeBlendSpace2D_mcmfl")
 states/walking/position = Vector2(544, 100)
-transitions = ["idle", "walking", SubResource("AnimationNodeStateMachineTransition_xb6gg"), "walking", "idle", SubResource("AnimationNodeStateMachineTransition_tyxat"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_j5gdk"), "slash", "idle", SubResource("AnimationNodeStateMachineTransition_8j2ld"), "slash", "walking", SubResource("AnimationNodeStateMachineTransition_jf8yi")]
+transitions = ["idle", "walking", SubResource("AnimationNodeStateMachineTransition_xb6gg"), "walking", "idle", SubResource("AnimationNodeStateMachineTransition_tyxat"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_j5gdk"), "slash", "idle", SubResource("AnimationNodeStateMachineTransition_8j2ld"), "slash", "walking", SubResource("AnimationNodeStateMachineTransition_jf8yi"), "death", "End", SubResource("AnimationNodeStateMachineTransition_ky31w"), "idle", "death", SubResource("AnimationNodeStateMachineTransition_23q3x"), "walking", "death", SubResource("AnimationNodeStateMachineTransition_h5rmj")]
+graph_offset = Vector2(-28, -18)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_apup0"]
 
@@ -428,6 +461,7 @@ anim_player = NodePath("../AnimationPlayer")
 active = true
 process_callback = 0
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_apup0")
+parameters/death/blend_position = Vector2(-0.15597, -0.427185)
 parameters/idle/blend_position = Vector2(-0.148014, -0.423753)
 parameters/slash/blend_position = Vector2(0.0014441, 0.968657)
 parameters/walking/blend_position = Vector2(-0.60361, -0.187336)

@@ -16,10 +16,13 @@ extends RigidBody2D
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
 
-# More misc variables
+# Initializing position related variables
 var target_position = get_viewport_rect().size / 2
 var target_direction = (target_position - global_position).normalized()
 var distance_to_target = global_position.distance_to(target_position)
+
+# Initializing other variables
+var dead = false
 
 # Initilization tasks
 func _ready():
@@ -29,11 +32,11 @@ func _ready():
 # Main physics loop
 func _physics_process(_delta):
 	
-	# Handle Walking
-	handle_walk()
-	
-	# Handle animation
-	handle_animation(target_direction)
+	if dead: 
+		handle_death() # If dead, be dead
+	else:
+		handle_walk() # Handle walking
+		handle_animation(target_direction) # Handle animation
 
 # Whenever an input is pressed
 func _input(event):
@@ -47,6 +50,7 @@ func _input(event):
 	if event is InputEventKey:
 		if event.is_action_pressed("character_knockback"):
 			apply_knock_force()
+			dead = true
 	
 	# When I click on the screen update the target_position
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -79,6 +83,7 @@ func update_animation_parameters(move_input: Vector2):
 		animation_tree.set("parameters/walking/blend_position", move_input)
 		animation_tree.set("parameters/idle/blend_position", move_input)
 		animation_tree.set("parameters/slash/blend_position", move_input)
+		animation_tree.set("parameters/death/blend_position", move_input)
 
 # Handles animation tree stuff
 func idle_or_walk():
@@ -86,6 +91,9 @@ func idle_or_walk():
 		state_machine.travel("walking")
 	else:
 		state_machine.travel("idle")
+		
+func handle_death():
+	state_machine.travel("death")
 
 # Knock the character in a random direction
 func apply_knock_force():
