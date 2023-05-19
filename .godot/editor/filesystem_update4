@@ -1,7 +1,3 @@
 res://arenas/arena_01.tscn
-res://characters/player.tscn
-res://characters/player_old.tscn
-res://characters/ally_character.tscn
-res://characters/ally_character.gd
 res://characters/Yokozuna.tscn
 res://characters/Yokozuna.gd

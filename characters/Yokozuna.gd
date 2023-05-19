@@ -44,9 +44,14 @@ func _physics_process(_delta):
 # Whenever an input is pressed
 func _input(event):
 	
+	
+	if event.is_action_pressed("swing_sword"):
+		print("I have pressed the button")
+		state_machine.travel("slash")
+	
 	# When I press F, knock the charcter in a random direction
 	if event is InputEventKey:
-		if event.is_action_released("character_knockback"):
+		if event.is_action_pressed("character_knockback"):
 			apply_knock_force()
 	
 	# When I click on the screen update the target_position
@@ -72,6 +77,7 @@ func update_animation_parameters(move_input: Vector2):
 	if move_input != Vector2.ZERO:
 		animation_tree.set("parameters/walking/blend_position", move_input)
 		animation_tree.set("parameters/idle/blend_position", move_input)
+		animation_tree.set("parameters/slash/blend_position", move_input)
 
 # Handles animation tree stuff
 func pick_new_state():

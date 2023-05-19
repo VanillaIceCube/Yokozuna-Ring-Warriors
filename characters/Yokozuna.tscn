@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://b4stlm6n8t6hq"]
+[gd_scene load_steps=42 format=3 uid="uid://b4stlm6n8t6hq"]
 
 [ext_resource type="Script" path="res://characters/Yokozuna.gd" id="1_ge5iv"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_uhcik"]
@@ -151,7 +151,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_ddodp"]
 resource_name = "slash_down"
 length = 0.4
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -168,7 +167,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_67hkf"]
 resource_name = "slash_left"
 length = 0.4
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -185,7 +183,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_7r3m2"]
 resource_name = "slash_right"
 length = 0.4
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -202,7 +199,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_ejnn3"]
 resource_name = "slash_up"
 length = 0.4
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -328,6 +324,31 @@ min_space = Vector2(-1, -1.1)
 max_space = Vector2(1, 1.1)
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lklbi"]
+animation = &"slash_up"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tw2ou"]
+animation = &"slash_down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hnbqx"]
+animation = &"slash_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_yh6el"]
+animation = &"slash_right"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_mi8rl"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_lklbi")
+blend_point_0/pos = Vector2(0, -1.1)
+blend_point_1/node = SubResource("AnimationNodeAnimation_tw2ou")
+blend_point_1/pos = Vector2(0, 1.1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_hnbqx")
+blend_point_2/pos = Vector2(-1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_yh6el")
+blend_point_3/pos = Vector2(1, 0)
+min_space = Vector2(-1, -1.1)
+max_space = Vector2(1, 1.1)
+blend_mode = 1
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tg6b4"]
 animation = &"walk_up"
 
@@ -362,12 +383,22 @@ advance_mode = 0
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_j5gdk"]
 advance_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8j2ld"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jf8yi"]
+switch_mode = 2
+advance_mode = 2
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_8625g"]
 states/idle/node = SubResource("AnimationNodeBlendSpace2D_fmjj1")
 states/idle/position = Vector2(363, 100)
+states/slash/node = SubResource("AnimationNodeBlendSpace2D_mi8rl")
+states/slash/position = Vector2(363, 200)
 states/walking/node = SubResource("AnimationNodeBlendSpace2D_mcmfl")
 states/walking/position = Vector2(544, 100)
-transitions = ["idle", "walking", SubResource("AnimationNodeStateMachineTransition_xb6gg"), "walking", "idle", SubResource("AnimationNodeStateMachineTransition_tyxat"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_j5gdk")]
+transitions = ["idle", "walking", SubResource("AnimationNodeStateMachineTransition_xb6gg"), "walking", "idle", SubResource("AnimationNodeStateMachineTransition_tyxat"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_j5gdk"), "slash", "idle", SubResource("AnimationNodeStateMachineTransition_8j2ld"), "slash", "walking", SubResource("AnimationNodeStateMachineTransition_jf8yi")]
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_apup0"]
 
@@ -395,6 +426,8 @@ libraries = {
 tree_root = SubResource("AnimationNodeStateMachine_8625g")
 anim_player = NodePath("../AnimationPlayer")
 active = true
+process_callback = 0
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_apup0")
-parameters/idle/blend_position = Vector2(0.127076, -0.349102)
+parameters/idle/blend_position = Vector2(-0.148014, -0.423753)
+parameters/slash/blend_position = Vector2(0.0014441, 0.968657)
 parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
