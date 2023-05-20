@@ -4,3 +4,5 @@ res://characters/Yokozuna.gd
 res://characters/practice_dummy.tscn
 res://objects/chest_dummy.tscn
 res://objects/chest_dummy.gd
+res://objects/chest.tscn
+res://objects/chest.gd

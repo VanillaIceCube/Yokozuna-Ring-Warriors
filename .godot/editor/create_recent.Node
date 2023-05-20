@@ -1,9 +1,9 @@
-Timer
-Sprite2D
-Node
-Camera2D
-RigidBody2D
 AnimationTree
 AnimationPlayer
 CollisionShape2D
+Sprite2D
+RigidBody2D
+Timer
+Node
+Camera2D
 CharacterBody2D
