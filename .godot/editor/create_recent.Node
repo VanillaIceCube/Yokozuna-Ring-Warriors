@@ -1,3 +1,4 @@
+Timer
 Node
 CollisionShape2D
 Area2D
@@ -5,6 +6,5 @@ AnimationTree
 AnimationPlayer
 Sprite2D
 RigidBody2D
-Timer
 Camera2D
 CharacterBody2D
