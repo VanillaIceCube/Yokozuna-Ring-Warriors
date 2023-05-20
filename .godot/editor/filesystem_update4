@@ -1,3 +1,6 @@
 res://arenas/arena_01.tscn
 res://characters/Yokozuna.tscn
 res://characters/Yokozuna.gd
+res://characters/practice_dummy.tscn
+res://objects/chest_dummy.tscn
+res://objects/chest_dummy.gd

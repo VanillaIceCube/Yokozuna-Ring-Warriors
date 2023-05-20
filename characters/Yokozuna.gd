@@ -43,8 +43,7 @@ func _input(event):
 	
 	# Pressing R swings sword
 	if event.is_action_pressed("swing_sword"):
-		print("I have pressed the button")
-		state_machine.travel("slash")
+		slash()
 	
 	# When I press F, knock the charcter in a random direction
 	if event is InputEventKey:
@@ -101,6 +100,13 @@ func handle_death():
 	else:
 		state_machine.travel("death")
 
+# slash attack, in the future we can allow slash to only happen if enemy in range
+func slash():
+	if $slashTimer.is_stopped():
+		state_machine.travel("slash")
+		$slashTimer.start()
+	else:
+		print("You have ", $slashTimer.time_left, " left!")
 
 # Knock the character in a random direction
 func apply_knock_force():
@@ -108,3 +114,10 @@ func apply_knock_force():
 	var knock_direction = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
 	var knock_force_vector = knock_direction * knock_force * (1 + tsukareta/100) # multiples knockback by damage taken
 	apply_central_impulse(knock_force_vector)
+
+func _on_slash_timer_timeout():
+	print("You are now able to slash again!")
+
+# Try to use abilities every 0.1 seconds
+func _on_use_abilities_timeout():
+	slash()
