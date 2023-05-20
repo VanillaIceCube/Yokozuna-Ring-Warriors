@@ -105,8 +105,6 @@ func slash():
 	if $slashTimer.is_stopped():
 		state_machine.travel("slash")
 		$slashTimer.start()
-	else:
-		print("You have ", $slashTimer.time_left, " left!")
 
 # Knock the character in a random direction
 func apply_knock_force():

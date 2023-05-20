@@ -1,7 +1,8 @@
-[gd_scene load_steps=50 format=3 uid="uid://b4stlm6n8t6hq"]
+[gd_scene load_steps=52 format=3 uid="uid://b4stlm6n8t6hq"]
 
 [ext_resource type="Script" path="res://characters/Yokozuna.gd" id="1_ge5iv"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_uhcik"]
+[ext_resource type="Script" path="res://characters/sword.gd" id="3_n2x5s"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wk5d7"]
 radius = 7.0
@@ -161,6 +162,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [36, 37, 38, 39]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sword:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sword/CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 16)]
+}
 
 [sub_resource type="Animation" id="Animation_67hkf"]
 resource_name = "slash_left"
@@ -176,6 +201,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [72, 73, 74, 75]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sword:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sword/CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-8, 8)]
 }
 
 [sub_resource type="Animation" id="Animation_7r3m2"]
@@ -193,6 +242,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [42, 43, 44, 45]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sword:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sword/CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8, 8)]
+}
 
 [sub_resource type="Animation" id="Animation_ejnn3"]
 resource_name = "slash_up"
@@ -208,6 +281,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [48, 49, 50, 51]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sword:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sword/CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_5hf1p"]
@@ -435,6 +532,9 @@ graph_offset = Vector2(-28, -18)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_apup0"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6q2wq"]
+size = Vector2(25.25, 24)
+
 [node name="Yokozuna" type="RigidBody2D"]
 gravity_scale = 0.0
 lock_rotation = true
@@ -475,5 +575,14 @@ process_callback = 0
 wait_time = 3.0
 one_shot = true
 
+[node name="sword" type="Area2D" parent="."]
+monitoring = false
+monitorable = false
+script = ExtResource("3_n2x5s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sword"]
+shape = SubResource("RectangleShape2D_6q2wq")
+
 [connection signal="timeout" from="use_abilities" to="." method="_on_use_abilities_timeout"]
 [connection signal="timeout" from="slashTimer" to="." method="_on_slash_timer_timeout"]
+[connection signal="body_entered" from="sword" to="sword" method="_on_body_entered"]

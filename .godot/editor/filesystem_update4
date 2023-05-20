@@ -6,3 +6,5 @@ res://objects/chest_dummy.tscn
 res://objects/chest_dummy.gd
 res://objects/chest.tscn
 res://objects/chest.gd
+res://characters/sword.gd
+res://objects/Damageable.gd

@@ -13,7 +13,7 @@ texture = ExtResource("2_8ewhh")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
 
-[node name="chest" parent="." instance=ExtResource("3_4hxlx")]
-position = Vector2(126, 48)
-
 [node name="Yokozuna" parent="." instance=ExtResource("1_yuyf3")]
+
+[node name="chest" parent="." instance=ExtResource("3_4hxlx")]
+position = Vector2(-167, -67)
