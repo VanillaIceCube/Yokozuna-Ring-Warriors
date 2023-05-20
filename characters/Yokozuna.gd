@@ -31,12 +31,12 @@ func _ready():
 
 # Main physics loop
 func _physics_process(_delta):
-	
-	if dead: 
-		handle_death() # If dead, be dead
-	else:
+		
+	if not dead:
 		handle_walk() # Handle walking
 		handle_animation(target_direction) # Handle animation
+	
+	handle_death() # Handle death related stuff
 
 # Whenever an input is pressed
 func _input(event):
@@ -50,7 +50,6 @@ func _input(event):
 	if event is InputEventKey:
 		if event.is_action_pressed("character_knockback"):
 			apply_knock_force()
-			dead = true
 	
 	# When I click on the screen update the target_position
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -91,9 +90,17 @@ func idle_or_walk():
 		state_machine.travel("walking")
 	else:
 		state_machine.travel("idle")
-		
+
+# Handle death
 func handle_death():
-	state_machine.travel("death")
+	# You die if you're too far from the center; this is a placeholder for now
+	if not dead:
+		var distance_from_center = global_position.distance_to(Vector2(0, 0))
+		if distance_from_center > 240:
+			dead = true
+	else:
+		state_machine.travel("death")
+
 
 # Knock the character in a random direction
 func apply_knock_force():
