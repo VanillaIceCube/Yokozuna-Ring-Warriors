@@ -113,3 +113,8 @@ parameters/playback = SubResource("AnimationNodeStateMachinePlayback_3ydn7")
 
 [node name="Damageable" type="Node" parent="."]
 script = ExtResource("3_7v0yc")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
