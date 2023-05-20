@@ -118,4 +118,47 @@ func _on_slash_timer_timeout():
 
 # Try to use abilities every 0.1 seconds
 func _on_use_abilities_timeout():
-	slash()
+
+	if global_position.distance_to(choose_target(find_group("Chest"))) < 15 and global_position.distance_to(Vector2(0,0)) > 15:
+		slash()
+
+func find_group(group):
+	var group_list = []
+
+	# Iterate over all nodes in the scene
+	for node in get_tree().get_nodes_in_group(group):
+		if not node.dead:
+			var node_entry = {
+				"node": node,
+				"position": node.global_position,
+				"distance": global_position.distance_to(node.global_position)
+			}
+			
+			group_list.append(node_entry)
+	
+	print(group_list)
+	return group_list
+
+func choose_target(list):
+	var closestNode = null
+	var closestDistance = INF
+	
+	if not list.is_empty():
+	# Find the node with the minimum distance
+		
+		for node in list:
+			if node.distance < closestDistance:
+				closestNode = node.node
+				closestDistance = node.distance
+
+		# Check if a closest node was found
+		if closestNode:
+			var closestPosition = closestNode.global_position
+			
+		target_position = closestNode.position
+		return closestNode.global_position
+	else:
+		target_position = Vector2(0,0)
+		return(Vector2(0,0))
+	return(Vector2(0,0))
+	

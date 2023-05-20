@@ -1,10 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1684526152
+::res://::1684616027
 icon.svg::CompressedTexture2D::7610020705067284417::1684275612::1684275622::1::::<><>::
 README.md::TextFile::-1::1684275697::0::1::::<><>::
-::res://arenas/::1684512628
-arena_01.tscn::PackedScene::1081862853134892836::1684512628::0::1::::<><>::uid://b4stlm6n8t6hq<>uid://d1nns02mmgn2r
-::res://assets/::1684479939
+::res://arenas/::1684615595
+arena_01.tscn::PackedScene::1081862853134892836::1684615595::0::1::::<><>::uid://b4stlm6n8t6hq<>uid://d1nns02mmgn2r<>uid://bobpvvdw2e2x1<>uid://he8fx404fjtp
+::res://assets/::1684552472
 ::res://assets/mystic_woods_free_2.1/::1684276840
 read_me.txt::TextFile::-1::1684276840::0::1::::<><>::
 ::res://assets/mystic_woods_free_2.1/sprites/::1684276840
@@ -47,8 +47,41 @@ wooden.png::CompressedTexture2D::83938680071967793::1684276840::1684276896::1:::
 walls.png::CompressedTexture2D::6007526419584046615::1684276840::1684276896::1::::<><>::
 wooden_door.png::CompressedTexture2D::4764629201965100983::1684276840::1684276896::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4600079659664057082::1684276840::1684276896::1::::<><>::
+::res://assets/ZeggyGames/::1684552472
+::res://assets/ZeggyGames/Asset Pack-V2/::1684552219
+::res://assets/ZeggyGames/Asset Pack-V2/Air Spin/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Crouch-Idle/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Crouch-Walk/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Ledge Grab-Climb/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Player Roll/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Pull/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Push/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V3/::1684552429
+::res://assets/ZeggyGames/Asset Pack-V3/Basic Sword Attack 1/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Death/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Hurt-Damaged/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Punch/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Sword Idle/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Sword Run/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/PlayerIdlePushPull/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/PlayerWalk/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Sword Stab/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/::1684552372
+::res://assets/ZeggyGames/AssetPack-V1/Aseprite Files/::1684552365
+::res://assets/ZeggyGames/AssetPack-V1/Aseprite Files/Player/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/Aseprite Files/Tilemap/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/Sprite Sheets/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/Tilemap/::1684553462
 ::res://assets/zughy2/::1684479982
 Boss arena.png::CompressedTexture2D::9011831717022160139::1684479978::1684479982::1::::<><>::
-::res://characters/::1684512607
-Yokozuna.gd::GDScript::-1::1684482187::0::1::::<>RigidBody2D<>::
-Yokozuna.tscn::PackedScene::4460229894169313922::1684512607::0::1::::<><>::res://characters/Yokozuna.gd<>uid://ckdydugkce4yv
+::res://characters/::1684615853
+sword.gd::GDScript::-1::1684604630::0::1::::<>Area2D<>::
+Yokozuna.gd::GDScript::-1::1684605641::0::1::::<>RigidBody2D<>::
+Yokozuna.tscn::PackedScene::4460229894169313922::1684615853::0::1::::<><>::res://characters/Yokozuna.gd<>uid://ckdydugkce4yv<>res://characters/sword.gd
+::res://game_objects/::1684615595
+chest_spawner.gd::GDScript::-1::1684615088::0::1::::<>Node<>::
+chest_spawner.tscn::PackedScene::501593260224511889::1684615595::0::1::::<><>::res://game_objects/chest_spawner.gd
+::res://objects/::1684615595
+chest.gd::GDScript::-1::1684615088::0::1::::<>RigidBody2D<>::
+chest.tscn::PackedScene::3372078237603729892::1684615595::0::1::::<><>::res://objects/chest.gd<>uid://dgymcvlahe3ta<>res://objects/Damageable.gd
+Damageable.gd::GDScript::-1::1684605667::0::1::::Damageable<>Node<>::

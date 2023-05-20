@@ -14,6 +14,19 @@ texture = ExtResource("2_8ewhh")
 zoom = Vector2(0.5, 0.5)
 
 [node name="Yokozuna" parent="." instance=ExtResource("1_yuyf3")]
+move_speed = 400.0
+stop_radius = 15.0
+linear_damp_export = 4.0
+tsukareta = 0.0
+knock_force = 400.0
+start_direction = Vector2(0, 1)
 
+<<<<<<< Updated upstream
 [node name="chest" parent="." instance=ExtResource("3_4hxlx")]
 position = Vector2(-167, -67)
+=======
+[node name="chest" parent="." groups=["Chest"] instance=ExtResource("3_4hxlx")]
+position = Vector2(-147, 30)
+
+[node name="chest_spawner" parent="." instance=ExtResource("4_0wdt4")]
+>>>>>>> Stashed changes
