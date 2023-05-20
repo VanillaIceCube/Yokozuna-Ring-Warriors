@@ -1,12 +1,9 @@
 res://arenas/arena_01.tscn
 res://characters/Yokozuna.tscn
 res://objects/chest.tscn
-<<<<<<< Updated upstream
-res://objects/chest.gd
-res://characters/sword.gd
-res://objects/Damageable.gd
-=======
 res://game_objects/chest_spawner.tscn
 res://characters/Yokozuna.gd
 res://game_objects/chest_spawner.gd
->>>>>>> Stashed changes
+res://objects/chest.gd
+res://objects/Damageable.gd
+res://characters/sword.gd

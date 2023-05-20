@@ -136,7 +136,6 @@ func find_group(group):
 			
 			group_list.append(node_entry)
 	
-	print(group_list)
 	return group_list
 
 func choose_target(list):
