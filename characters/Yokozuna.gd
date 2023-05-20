@@ -17,7 +17,7 @@ extends RigidBody2D
 @onready var state_machine = animation_tree.get("parameters/playback")
 
 # Initializing position related variables
-var target_position = get_viewport_rect().size / 2
+var target_position = Vector2(0, 0)
 var target_direction = (target_position - global_position).normalized()
 var distance_to_target = global_position.distance_to(target_position)
 

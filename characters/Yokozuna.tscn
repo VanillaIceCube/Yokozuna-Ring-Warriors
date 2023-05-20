@@ -466,15 +466,14 @@ parameters/idle/blend_position = Vector2(-0.148014, -0.423753)
 parameters/slash/blend_position = Vector2(0.0014441, 0.968657)
 parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
 
+[node name="use_abilities" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
 [node name="slashTimer" type="Timer" parent="."]
 process_callback = 0
 wait_time = 3.0
 one_shot = true
 
-[node name="use_abilities" type="Timer" parent="."]
-wait_time = 0.1
-autostart = true
-
-[connection signal="timeout" from="slashTimer" to="." method="_on_slash_timer_timeout"]
-[connection signal="timeout" from="use_abilities" to="." method="_on_attackpls_timeout"]
 [connection signal="timeout" from="use_abilities" to="." method="_on_use_abilities_timeout"]
+[connection signal="timeout" from="slashTimer" to="." method="_on_slash_timer_timeout"]
