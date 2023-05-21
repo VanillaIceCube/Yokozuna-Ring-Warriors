@@ -7,10 +7,12 @@ extends RigidBody2D
 # Initializing other variables
 var dead = false
 var distance_from_center = global_position.distance_to(Vector2(0, 0))
+@export var linear_damp_export : float = 4
 
 # Initilization tasks
 func _ready():
 	state_machine.travel("idle")
+	linear_damp = linear_damp_export
 
 # Main physics loop
 func _physics_process(_delta):

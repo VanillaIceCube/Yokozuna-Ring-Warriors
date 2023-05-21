@@ -119,7 +119,7 @@ func _on_slash_timer_timeout():
 # Try to use abilities every 0.1 seconds
 func _on_use_abilities_timeout():
 
-	if global_position.distance_to(choose_target(find_group("Chest"))) < 15 and global_position.distance_to(Vector2(0,0)) > 15:
+	if global_position.distance_to(choose_target(find_group("Chest"))) < 25:
 		slash()
 
 func find_group(group):

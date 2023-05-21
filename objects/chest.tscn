@@ -86,7 +86,6 @@ graph_offset = Vector2(-294, -21)
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_3ydn7"]
 
 [node name="chest" type="RigidBody2D"]
-mass = 100.0
 gravity_scale = 0.0
 lock_rotation = true
 script = ExtResource("1_c5ggc")

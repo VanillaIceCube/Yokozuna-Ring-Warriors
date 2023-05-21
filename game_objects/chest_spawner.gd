@@ -4,11 +4,7 @@ var objectScene = preload("res://objects/chest.tscn")  # Replace with the path t
 
 func _on_timer_timeout():
 	print("Spawn Chest")
-
-	var spawnArea = Rect2(Vector2(-200, -200), Vector2(200, 200))  # Replace with the desired spawn area
-	var spawnX = randf_range(spawnArea.position.x, spawnArea.position.x + spawnArea.size.x)
-	var spawnY = randf_range(spawnArea.position.y, spawnArea.position.y + spawnArea.size.y)
-	var spawnPosition = Vector2(spawnX, spawnY)
+	var spawnPosition = Vector2(randf_range(-240,240), randf_range(-240,240))
 
 	var objectInstance = objectScene.instantiate()
 
