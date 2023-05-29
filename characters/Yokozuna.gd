@@ -53,7 +53,6 @@ func _input(event):
 	# When I click on the screen update the target_position
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		target_position = get_global_mouse_position()
-		print("Clicked position in world coordinates:", target_position)
 
 # Handles walking for now
 func handle_walk():

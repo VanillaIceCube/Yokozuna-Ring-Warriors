@@ -10,3 +10,6 @@ res://objects/Chest.tscn
 res://game_objects/ChestSpawner.tscn
 res://objects/Chest.gd
 res://game_objects/ChestSpawner.gd
+res://character_components/WalkComponent.gd
+res://character_components/PhysicsComponent.gd
+res://characters/Yokozuna.gd

@@ -1,8 +1,9 @@
-[gd_scene load_steps=51 format=3 uid="uid://myhebkgy4qk3"]
+[gd_scene load_steps=52 format=3 uid="uid://myhebkgy4qk3"]
 
 [ext_resource type="Script" path="res://characters/Yokotuna.gd" id="1_ji3i0"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_skil2"]
 [ext_resource type="PackedScene" uid="uid://bvqk1c7c85gu8" path="res://character_components/PhysicsComponent.tscn" id="3_wf4o7"]
+[ext_resource type="PackedScene" uid="uid://dsowokq7io7mk" path="res://character_components/WalkComponent.tscn" id="4_wibtp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6m82e"]
 radius = 7.0
@@ -562,3 +563,5 @@ parameters/slash/blend_position = Vector2(0.0014441, 0.968657)
 parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
 
 [node name="PhysicsComponent" parent="." instance=ExtResource("3_wf4o7")]
+
+[node name="WalkComponent" parent="." instance=ExtResource("4_wibtp")]
