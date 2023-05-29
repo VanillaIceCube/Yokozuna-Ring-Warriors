@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvqk1c7c85gu8"]
+
+[ext_resource type="Script" path="res://character_components/PhysicsComponent.gd" id="1_g12lf"]
+
+[node name="PhysicsComponent" type="Node"]
+script = ExtResource("1_g12lf")

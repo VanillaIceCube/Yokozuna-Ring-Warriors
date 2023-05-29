@@ -1,8 +1,8 @@
 [gd_scene load_steps=16 format=3 uid="uid://bobpvvdw2e2x1"]
 
-[ext_resource type="Script" path="res://objects/chest.gd" id="1_c5ggc"]
-[ext_resource type="Texture2D" uid="uid://dgymcvlahe3ta" path="res://assets/mystic_woods_free_2.1/sprites/objects/chest_01.png" id="1_xob0o"]
-[ext_resource type="Script" path="res://objects/Damageable.gd" id="3_7v0yc"]
+[ext_resource type="Script" path="res://objects/Chest.gd" id="1_uywfd"]
+[ext_resource type="Texture2D" uid="uid://dgymcvlahe3ta" path="res://assets/mystic_woods_free_2.1/sprites/objects/chest_01.png" id="2_4chli"]
+[ext_resource type="Script" path="res://objects/Damageable.gd" id="3_ou61q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_odrp0"]
 size = Vector2(14, 13)
@@ -85,13 +85,13 @@ graph_offset = Vector2(-294, -21)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_3ydn7"]
 
-[node name="chest" type="RigidBody2D"]
+[node name="Chest" type="RigidBody2D"]
 gravity_scale = 0.0
 lock_rotation = true
-script = ExtResource("1_c5ggc")
+script = ExtResource("1_uywfd")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_xob0o")
+texture = ExtResource("2_4chli")
 hframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -111,7 +111,7 @@ process_callback = 0
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_3ydn7")
 
 [node name="Damageable" type="Node" parent="."]
-script = ExtResource("3_7v0yc")
+script = ExtResource("3_ou61q")
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true

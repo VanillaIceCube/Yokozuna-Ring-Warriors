@@ -1,6 +1,6 @@
 extends Node
 
-var objectScene = preload("res://objects/chest.tscn")  # Replace with the path to your object scene
+var objectScene = preload("res://objects/Chest.tscn")  # Replace with the path to your object scene
 
 func _on_timer_timeout():
 	print("Spawn Chest")

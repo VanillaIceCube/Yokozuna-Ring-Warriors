@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://dli78khlsbdqx"]
 
-[ext_resource type="Script" path="res://game_objects/chest_spawner.gd" id="1_vrchc"]
+[ext_resource type="Script" path="res://game_objects/ChestSpawner.gd" id="1_vrchc"]
 
-[node name="chest_spawner" type="Node"]
+[node name="ChestSpawner" type="Node"]
 script = ExtResource("1_vrchc")
 
 [node name="Timer" type="Timer" parent="."]

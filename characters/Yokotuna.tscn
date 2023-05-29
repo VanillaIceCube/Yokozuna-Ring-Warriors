@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://characters/Yokotuna.gd" id="1_ji3i0"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_skil2"]
-[ext_resource type="PackedScene" uid="uid://bvqk1c7c85gu8" path="res://character_components/physics_component.tscn" id="3_wf4o7"]
+[ext_resource type="PackedScene" uid="uid://bvqk1c7c85gu8" path="res://character_components/PhysicsComponent.tscn" id="3_wf4o7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6m82e"]
 radius = 7.0

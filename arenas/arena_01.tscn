@@ -1,22 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://poceglpx5tcu"]
+[gd_scene load_steps=4 format=3 uid="uid://poceglpx5tcu"]
 
-[ext_resource type="PackedScene" uid="uid://b4stlm6n8t6hq" path="res://characters/Yokozuna.tscn" id="1_yuyf3"]
-[ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="2_8ewhh"]
-[ext_resource type="PackedScene" uid="uid://dli78khlsbdqx" path="res://game_objects/chest_spawner.tscn" id="4_0wdt4"]
-[ext_resource type="PackedScene" uid="uid://myhebkgy4qk3" path="res://characters/Yokotuna.tscn" id="4_w6eot"]
+[ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="1_dfc0p"]
+[ext_resource type="PackedScene" uid="uid://b4stlm6n8t6hq" path="res://characters/Yokozuna.tscn" id="2_cdfki"]
+[ext_resource type="PackedScene" uid="uid://dli78khlsbdqx" path="res://game_objects/ChestSpawner.tscn" id="3_onglm"]
 
-[node name="arena_01" type="Node2D"]
+[node name="Arena_01" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-texture = ExtResource("2_8ewhh")
+texture = ExtResource("1_dfc0p")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
 
-[node name="Yokozuna" parent="." instance=ExtResource("1_yuyf3")]
+[node name="Yokozuna" parent="." instance=ExtResource("2_cdfki")]
 
-[node name="chest_spawner" parent="." instance=ExtResource("4_0wdt4")]
-
-[node name="RigidBody2D" parent="." instance=ExtResource("4_w6eot")]
-position = Vector2(-121, -74)
+[node name="ChestSpawner" parent="." instance=ExtResource("3_onglm")]
