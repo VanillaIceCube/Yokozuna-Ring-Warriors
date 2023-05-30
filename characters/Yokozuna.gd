@@ -151,12 +151,10 @@ func choose_target(list):
 
 		# Check if a closest node was found
 		if closestNode:
-			var closestPosition = closestNode.global_position
+			var _closestPosition = closestNode.global_position
 			
 		target_position = closestNode.position
 		return closestNode.global_position
 	else:
 		target_position = Vector2(0,0)
 		return(Vector2(0,0))
-	return(Vector2(0,0))
-	

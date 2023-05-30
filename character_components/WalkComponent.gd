@@ -13,7 +13,7 @@ func _ready():
 	parent_node.linear_damp = linear_damp_export # This is two steps to setting friction, maybe it can be shortened
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	
 	# Generates the target_direction based off of the target_position
 	parent_node.target_direction = (parent_node.target_position - parent_node.global_position).normalized()

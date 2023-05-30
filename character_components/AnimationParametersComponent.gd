@@ -15,7 +15,8 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
+	
 	# Don't change animation parameters if there is no move input
 	if parent_node.target_direction != Vector2.ZERO:
 		animation_tree.set("parameters/walking/blend_position", parent_node.target_direction)
