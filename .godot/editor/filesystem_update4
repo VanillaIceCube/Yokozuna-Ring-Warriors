@@ -13,3 +13,6 @@ res://game_objects/ChestSpawner.gd
 res://character_components/WalkComponent.gd
 res://character_components/PhysicsComponent.gd
 res://characters/Yokozuna.gd
+res://character_components/AnimationParametersComponent.tscn
+res://character_components/AnimationParametersComponent.gd
+res://characters/Yokotuna.gd

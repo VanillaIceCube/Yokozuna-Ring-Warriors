@@ -15,7 +15,7 @@ func _ready():
 	linear_damp = linear_damp_export
 
 # Main physics loop
-func _physics_process(_delta):
+func _physics_process(delta):
 	handle_death()
 	
 # Handle death
