@@ -1,10 +1,13 @@
 extends Node
 
+var parent_node: Node = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var parent_node = get_parent()
+	parent_node = get_parent()
 
 	if parent_node is RigidBody2D:
-		var rigidbody = parent_node as RigidBody2D
-		rigidbody.gravity_scale = 0.0
-		rigidbody.lock_rotation = true
+		parent_node.gravity_scale = 0.0
+		parent_node.lock_rotation = true
+	else:
+		assert(false, "PhysicsComponent's parent isn't a RigidBody2D")
