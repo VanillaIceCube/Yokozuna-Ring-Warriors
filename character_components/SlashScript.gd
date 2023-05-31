@@ -5,10 +5,12 @@ var parent_node: Node = null # Initializing parent_node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	parent_node = get_parent() # Setting the parent_node
+	$Timer.wait_time = attack_time
 	
 var attack_damage := 10
 var knockback_force := 1000
 var attack_range:= 30
+var attack_time:= 2
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):

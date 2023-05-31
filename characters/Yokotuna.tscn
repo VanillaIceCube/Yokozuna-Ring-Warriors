@@ -720,7 +720,6 @@ script = ExtResource("3_ityc6")
 shape = SubResource("RectangleShape2D_h6wxw")
 
 [node name="Timer" type="Timer" parent="Slash"]
-wait_time = 3.0
 one_shot = true
 autostart = true
 

@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://poceglpx5tcu"]
+[gd_scene load_steps=4 format=3 uid="uid://poceglpx5tcu"]
 
 [ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="1_dfc0p"]
-[ext_resource type="PackedScene" uid="uid://dli78khlsbdqx" path="res://game_objects/ChestSpawner.tscn" id="3_onglm"]
 [ext_resource type="PackedScene" uid="uid://myhebkgy4qk3" path="res://characters/Yokotuna.tscn" id="4_1uht4"]
 [ext_resource type="PackedScene" uid="uid://car4covadduuu" path="res://game_objects/TunaSpawner.tscn" id="4_i1jqk"]
 
@@ -15,7 +14,5 @@ texture = ExtResource("1_dfc0p")
 zoom = Vector2(0.5, 0.5)
 
 [node name="YokoTuna" parent="." groups=["Yoko"] instance=ExtResource("4_1uht4")]
-
-[node name="ChestSpawner" parent="." instance=ExtResource("3_onglm")]
 
 [node name="TunaSpawner" parent="." instance=ExtResource("4_i1jqk")]
