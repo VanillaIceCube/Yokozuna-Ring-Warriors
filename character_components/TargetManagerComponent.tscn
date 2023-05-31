@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cv44nfnf5vs8r"]
+
+[ext_resource type="Script" path="res://character_components/TargetManagerComponent.gd" id="1_spasj"]
+
+[node name="TargetManagerComponent" type="Node"]
+script = ExtResource("1_spasj")
