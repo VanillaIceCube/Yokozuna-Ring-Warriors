@@ -25,6 +25,9 @@ func _on_timer_timeout():
 func _input(event):
 	# Pressing R swings sword
 	if event.is_action_pressed("swing_sword"):
-		if $Timer.is_stopped():
-			get_node("../AnimationParametersComponent").state_machine.travel("slash")
-			$Timer.start()
+		slash()
+
+func slash():
+	if $Timer.is_stopped():
+		get_node("../AnimationParametersComponent").state_machine.travel("slash")
+		$Timer.start()
