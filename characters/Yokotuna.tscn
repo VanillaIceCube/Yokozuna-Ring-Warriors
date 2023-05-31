@@ -546,7 +546,7 @@ script = ExtResource("1_ji3i0")
 texture = ExtResource("1_skil2")
 hframes = 6
 vframes = 14
-frame = 62
+frame = 17
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 8)
@@ -568,6 +568,14 @@ parameters/idle/blend_position = Vector2(-0.148014, -0.423753)
 parameters/slash/blend_position = Vector2(0.0014441, 0.968657)
 parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
 
+[node name="PhysicsComponent" parent="." instance=ExtResource("3_wf4o7")]
+
+[node name="WalkComponent" parent="." instance=ExtResource("4_wibtp")]
+
+[node name="AnimationParametersComponent" parent="." instance=ExtResource("5_56mg0")]
+
+[node name="TsuekrattaComponent" parent="." instance=ExtResource("7_bof10")]
+
 [node name="Slash" type="Area2D" parent="."]
 monitorable = false
 script = ExtResource("3_ityc6")
@@ -579,14 +587,6 @@ shape = SubResource("RectangleShape2D_h6wxw")
 wait_time = 3.0
 one_shot = true
 autostart = true
-
-[node name="PhysicsComponent" parent="." instance=ExtResource("3_wf4o7")]
-
-[node name="WalkComponent" parent="." instance=ExtResource("4_wibtp")]
-
-[node name="AnimationParametersComponent" parent="." instance=ExtResource("5_56mg0")]
-
-[node name="TsuekrattaComponent" parent="." instance=ExtResource("7_bof10")]
 
 [connection signal="body_entered" from="Slash" to="Slash" method="_on_body_entered"]
 [connection signal="timeout" from="Slash/Timer" to="Slash" method="_on_timer_timeout"]
