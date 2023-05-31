@@ -8,6 +8,12 @@ func _ready():
 	
 var attack_damage := 10
 var knockback_force := 1000
+var attack_range:= 16
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	if parent_node.distance_to_target < attack_range:
+		slash()
 
 func _on_body_entered(body):
 	for child in body.get_children():
