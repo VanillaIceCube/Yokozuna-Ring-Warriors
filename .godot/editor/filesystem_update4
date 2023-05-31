@@ -6,3 +6,6 @@ res://characters/Yokozuna.tscn
 res://character_components/TargetManagerComponent.tscn
 res://character_components/TargetManagerComponent.gd
 res://characters/Yokotuna.gd
+res://game_objects/TunaSpawner.tscn
+res://game_objects/TunaSpawner.gd
+res://game_objects/ChestSpawner.tscn

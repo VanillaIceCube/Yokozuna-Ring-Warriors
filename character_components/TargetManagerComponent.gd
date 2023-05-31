@@ -7,8 +7,8 @@ func _ready():
 	parent_node = get_parent() # Setting the parent_node
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	choose_target(find_group("Chest"))
+func _process(_delta):
+	choose_target(find_group(parent_node.tar_group))
 
 # Choose the closest target based on the given list
 func choose_target(list):
