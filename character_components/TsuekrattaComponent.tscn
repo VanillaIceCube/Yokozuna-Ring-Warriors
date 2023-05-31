@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://pu024d3cqnon"]
+
+[ext_resource type="Script" path="res://character_components/TsuekrattaComponent.gd" id="1_q66l3"]
+
+[node name="TsuekrattaComponent" type="Node"]
+script = ExtResource("1_q66l3")

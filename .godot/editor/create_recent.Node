@@ -1,6 +1,6 @@
+Timer
 Node
 RigidBody2D
-Timer
 CollisionShape2D
 Area2D
 AnimationTree

@@ -13,7 +13,6 @@ func _ready():
 	state_machine = animation_tree.get("parameters/playback")
 	print(animation_tree)
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	
