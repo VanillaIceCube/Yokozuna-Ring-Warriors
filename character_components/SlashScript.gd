@@ -12,7 +12,7 @@ var attack_range:= 30
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if parent_node.distance_to_target < attack_range:
+	if parent_node.distance_to_target < attack_range and parent_node.target_is_enemy:
 		slash()
 
 func _on_body_entered(body):

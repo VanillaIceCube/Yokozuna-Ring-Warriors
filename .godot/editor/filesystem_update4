@@ -5,3 +5,4 @@ res://character_components/SlashScript.gd
 res://characters/Yokozuna.tscn
 res://character_components/TargetManagerComponent.tscn
 res://character_components/TargetManagerComponent.gd
+res://characters/Yokotuna.gd

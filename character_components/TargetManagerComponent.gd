@@ -28,9 +28,11 @@ func choose_target(list):
 			var _closestPosition = closestNode.global_position
 			
 		parent_node.target_position = closestNode.position
+		parent_node.target_is_enemy = true
 		return closestNode.global_position
 	else:
 		parent_node.target_position = Vector2(0,0)
+		parent_node.target_is_enemy = false
 		return(Vector2(0,0)) 
 
 # Create a list of a certain group
