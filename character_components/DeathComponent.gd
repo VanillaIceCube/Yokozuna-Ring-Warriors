@@ -7,7 +7,7 @@ func _ready():
 	parent_node = get_parent() # Setting the parent_node
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	# You die if you're too far from the center; this is a placeholder for now
 	if not parent_node.dead:
 		var distance_from_center = parent_node.global_position.distance_to(Vector2(0, 0))
