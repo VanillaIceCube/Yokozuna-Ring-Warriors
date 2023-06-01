@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://myhebkgy4qk3"]
+[gd_scene load_steps=58 format=3 uid="uid://myhebkgy4qk3"]
 
 [ext_resource type="Script" path="res://characters/Yokotuna.gd" id="1_ji3i0"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_skil2"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://75vu8hghxu6a" path="res://character_components/AnimationParametersComponent.tscn" id="5_56mg0"]
 [ext_resource type="PackedScene" uid="uid://pu024d3cqnon" path="res://character_components/TsuekrattaComponent.tscn" id="7_bof10"]
 [ext_resource type="PackedScene" uid="uid://cv44nfnf5vs8r" path="res://character_components/TargetManagerComponent.tscn" id="7_fdma2"]
+[ext_resource type="PackedScene" uid="uid://dfs2qskucpeou" path="res://character_components/DeathComponent.tscn" id="8_7hvvn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6m82e"]
 radius = 7.0
@@ -806,6 +807,8 @@ parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
 [node name="TsuekrattaComponent" parent="." instance=ExtResource("7_bof10")]
 
 [node name="TargetManagerComponent" parent="." instance=ExtResource("7_fdma2")]
+
+[node name="DeathComponent" parent="." instance=ExtResource("8_7hvvn")]
 
 [node name="Slash" type="Area2D" parent="."]
 monitoring = false
