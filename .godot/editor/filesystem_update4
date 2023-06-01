@@ -8,3 +8,5 @@ res://characters/Yokozuna.tscn
 res://character_components/TargetManagerComponent.tscn
 res://game_objects/TunaSpawner.tscn
 res://character_components/WalkComponent.gd
+res://objects/Chest.tscn
+res://game_objects/ChestSpawner.tscn

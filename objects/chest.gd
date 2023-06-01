@@ -21,7 +21,6 @@ func _physics_process(_delta):
 # Handle death
 func handle_death():
 	if not dead:
-		$Timer.start()
 		distance_from_center = global_position.distance_to(Vector2(0, 0))
 		if distance_from_center > 240:
 			dead = true

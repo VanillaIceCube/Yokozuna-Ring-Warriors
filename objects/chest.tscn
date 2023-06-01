@@ -1,8 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://bobpvvdw2e2x1"]
+[gd_scene load_steps=16 format=3 uid="uid://bobpvvdw2e2x1"]
 
 [ext_resource type="Script" path="res://objects/Chest.gd" id="1_uywfd"]
 [ext_resource type="Texture2D" uid="uid://dgymcvlahe3ta" path="res://assets/mystic_woods_free_2.1/sprites/objects/chest_01.png" id="2_4chli"]
-[ext_resource type="Script" path="res://objects/Damageable.gd" id="3_ou61q"]
 [ext_resource type="PackedScene" uid="uid://pu024d3cqnon" path="res://character_components/TsuekrattaComponent.tscn" id="4_cmqom"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_odrp0"]
@@ -111,12 +110,4 @@ active = true
 process_callback = 0
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_3ydn7")
 
-[node name="Damageable" type="Node" parent="."]
-script = ExtResource("3_ou61q")
-
-[node name="Timer" type="Timer" parent="."]
-one_shot = true
-
 [node name="TsuekrattaComponent" parent="." instance=ExtResource("4_cmqom")]
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
