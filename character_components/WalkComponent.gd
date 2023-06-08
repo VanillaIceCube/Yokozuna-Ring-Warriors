@@ -13,7 +13,7 @@ func _ready():
 	parent_node.linear_damp = linear_damp_export # This is two steps to setting friction, maybe it can be shortened
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func _process(delta):
 	if not parent_node.dead:
 		# Generates the target_direction based off of the target_position
 		parent_node.target_direction = (parent_node.target_position - parent_node.global_position).normalized()
@@ -24,7 +24,7 @@ func _process(_delta):
 			parent_node.target_direction = Vector2.ZERO
 		
 		# "Walk" towards your target position
-		parent_node.apply_central_force(parent_node.target_direction * move_speed)
+		parent_node.apply_central_force(delta*100*parent_node.target_direction * move_speed)
 
 # This is a temporary way to choose the target position
 func _input(event: InputEvent):

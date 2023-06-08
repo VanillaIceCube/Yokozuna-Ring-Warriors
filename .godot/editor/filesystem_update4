@@ -1,8 +1,10 @@
 res://characters/Yokotuna.tscn
 res://objects/Chest.gd
+res://arenas/Arena_01.tscn
 res://character_components/TargetManagerComponent.tscn
 res://game_objects/TunaSpawner.tscn
 res://character_components/DeathComponent.tscn
 res://game_objects/ChestSpawner.tscn
-res://arenas/Arena_01.tscn
-res://character_components/DeathComponent.gd
+res://character_components/WalkComponent.gd
+res://character_components/PhysicsComponent.tscn
+res://objects/Chest.tscn

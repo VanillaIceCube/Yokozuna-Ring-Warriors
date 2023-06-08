@@ -794,8 +794,8 @@ active = true
 process_callback = 0
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_3qvsq")
 parameters/death/blend_position = Vector2(-0.15597, -0.427185)
-parameters/idle/blend_position = Vector2(-0.148014, -0.423753)
-parameters/slash/blend_position = Vector2(0.0014441, 0.968657)
+parameters/idle/blend_position = Vector2(0.248201, -0.20625)
+parameters/slash/blend_position = Vector2(0.0683453, -0.48125)
 parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
 
 [node name="PhysicsComponent" parent="." instance=ExtResource("3_wf4o7")]
@@ -816,6 +816,7 @@ monitorable = false
 script = ExtResource("3_ityc6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Slash"]
+position = Vector2(-8, 8)
 shape = SubResource("RectangleShape2D_h6wxw")
 
 [node name="Timer" type="Timer" parent="Slash"]
