@@ -11,3 +11,9 @@ func _process(_delta):
 	# You die if you're too far from the center; this is a placeholder for now
 	if parent_node.dead:
 		parent_node.get_node("AnimationParametersComponent").state_machine.travel("death")
+		
+		if $Timer.is_stopped():
+			$Timer.start()
+
+func _on_timer_timeout():
+	parent_node.queue_free()
