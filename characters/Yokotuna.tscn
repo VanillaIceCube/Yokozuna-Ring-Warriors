@@ -770,13 +770,16 @@ graph_offset = Vector2(-28, -18)
 size = Vector2(25.25, 24)
 
 [node name="YokoTuna" type="RigidBody2D"]
+mass = 80.0
+center_of_mass_mode = 1
+center_of_mass = Vector2(0, 12.5)
 script = ExtResource("1_ji3i0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_skil2")
 hframes = 6
 vframes = 14
-frame = 8
+frame = 62
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 8)

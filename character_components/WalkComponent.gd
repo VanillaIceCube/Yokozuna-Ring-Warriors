@@ -3,7 +3,7 @@ extends Node
 var parent_node: Node = null # Initializing parent_node
 
 # Movement related
-var move_speed: float = 200
+var move_speed: float = 10000
 var stop_radius: float = 15
 
 # Called when the node enters the scene tree for the first time.

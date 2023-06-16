@@ -8,3 +8,5 @@ res://character_components/PhysicsComponent.tscn
 res://objects/Chest.tscn
 res://game_objects/TunaSpawner.gd
 res://character_components/AnimationParametersComponent.gd
+res://character_components/WalkComponent.gd
+res://character_components/SlashScript.gd

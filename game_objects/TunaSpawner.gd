@@ -11,7 +11,8 @@ func _on_timer_timeout():
 	# Set the position of the object
 	objectInstance.global_position = spawnPosition
 	objectInstance.tar_group = "Yoko"
-	objectInstance.get_node("Slash").knockback_force = 200
+	objectInstance.get_node("Slash").attack_damage = 1
+	objectInstance.get_node("Slash").knockback_force = 10000
 	objectInstance.get_node("Slash").attack_time = 5
 	objectInstance.verbosity = false
 	

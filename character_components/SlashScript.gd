@@ -3,7 +3,7 @@ extends Area2D
 var parent_node: Node = null # Initializing parent_node
 
 var attack_damage := 10
-var knockback_force := 800
+var knockback_force := 20000
 var attack_range:= 30
 var attack_time:= 1
 
