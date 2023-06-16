@@ -3,14 +3,12 @@ extends Node
 var parent_node: Node = null # Initializing parent_node
 
 # Movement related
-@export var move_speed: float = 200
-@export var stop_radius: float = 15
-@export var linear_damp_export: float = 2.5 # Basically Friction
+var move_speed: float = 200
+var stop_radius: float = 15
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	parent_node = get_parent() # Setting the parent_node
-	parent_node.linear_damp = linear_damp_export # This is two steps to setting friction, maybe it can be shortened
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

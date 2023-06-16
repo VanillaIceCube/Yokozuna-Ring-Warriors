@@ -21,8 +21,7 @@ func _process(_delta):
 		animation_tree.set("parameters/idle/blend_position", parent_node.target_direction)
 		animation_tree.set("parameters/slash/blend_position", parent_node.target_direction)
 		animation_tree.set("parameters/death/blend_position", parent_node.target_direction)
-	pass
-	
+
 	# Changes animation between walking and idle
 	if parent_node.linear_velocity.length() > 5:
 		state_machine.travel("walking")

@@ -11,3 +11,4 @@ res://character_components/SlashScript.gd
 res://characters/Yokotuna.gd
 res://game_objects/TunaSpawner.gd
 res://character_scripts/RigidBody2DBase.gd
+res://character_components/AnimationParametersComponent.gd
