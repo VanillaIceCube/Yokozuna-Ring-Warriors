@@ -3,9 +3,9 @@ extends Node
 var parent_node: Node = null # Initializing parent_node
 
 # Movement related
-@export var move_speed: float = 400
+@export var move_speed: float = 200
 @export var stop_radius: float = 15
-@export var linear_damp_export: float = 4 # Basically Friction
+@export var linear_damp_export: float = 2.5 # Basically Friction
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

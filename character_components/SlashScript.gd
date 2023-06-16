@@ -8,9 +8,9 @@ func _ready():
 	$Timer.wait_time = attack_time
 	
 var attack_damage := 10
-var knockback_force := 1000
+var knockback_force := 800
 var attack_range:= 30
-var attack_time:= 2
+var attack_time:= 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -27,7 +27,8 @@ func _on_body_entered(body):
 			child.get_hit(attack)
 
 func _on_timer_timeout():
-	print("YokoTuna can attack again!")
+	if parent_node.verbosity:
+		print("YokoTuna can attack again!")
 
 # Whenever an input is pressed
 func _input(event):
@@ -38,4 +39,5 @@ func _input(event):
 func slash():
 	if $Timer.is_stopped():
 		get_node("../AnimationParametersComponent").state_machine.travel("slash")
-		$Timer.start()
+		if get_node("../AnimationParametersComponent").state_machine.get_current_node() == "slash":
+			$Timer.start()

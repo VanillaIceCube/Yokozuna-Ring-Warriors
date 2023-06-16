@@ -8,6 +8,8 @@ var target_is_enemy: bool = false
 var dead: bool = false
 var tar_group: String = "Chest"
 
+var verbosity: bool = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass

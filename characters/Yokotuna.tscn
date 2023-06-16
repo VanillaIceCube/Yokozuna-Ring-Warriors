@@ -816,7 +816,7 @@ monitorable = false
 script = ExtResource("3_ityc6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Slash"]
-position = Vector2(-8, 8)
+position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_h6wxw")
 
 [node name="Timer" type="Timer" parent="Slash"]

@@ -1,79 +1,104 @@
 2a60927148abd1d33b818b535e306557
-::res://::1686236375
-icon.svg::CompressedTexture2D::7610020705067284417::1685273888::1685273888::1::::<><>::
-README.md::TextFile::-1::1685273888::0::1::::<><>::
-::res://arenas/::1685587248
-Arena_01.tscn::PackedScene::1081862853134892836::1685587248::0::1::::<><>::uid://d1nns02mmgn2r<>uid://myhebkgy4qk3<>uid://bobpvvdw2e2x1<>uid://car4covadduuu
-::res://assets/::1685273888
-::res://assets/mystic_woods_free_2.1/::1685273888
-read_me.txt::TextFile::-1::1685273888::0::1::::<><>::
-::res://assets/mystic_woods_free_2.1/sprites/::1685273888
-::res://assets/mystic_woods_free_2.1/sprites/characters/::1685273888
-player.png::CompressedTexture2D::5482386562429862969::1685273888::1685273888::1::::<><>::
-skeleton.png::CompressedTexture2D::298209066631924514::1685273888::1685273888::1::::<><>::
-slime.png::CompressedTexture2D::1850243662844536411::1685273888::1685273888::1::::<><>::
-::res://assets/mystic_woods_free_2.1/sprites/objects/::1685273888
-chest_01.png::CompressedTexture2D::7630673474498685638::1685273888::1685273888::1::::<><>::
-chest_02.png::CompressedTexture2D::4834439486698844747::1685273888::1685273888::1::::<><>::
-objects.png::CompressedTexture2D::2113222081962798458::1685273888::1685273888::1::::<><>::
-rock_in_water_01-sheet.png::CompressedTexture2D::2612276470988929637::1685273888::1685273888::1::::<><>::
-rock_in_water_01.png::CompressedTexture2D::9101080948630524602::1685273888::1685273888::1::::<><>::
-rock_in_water_02.png::CompressedTexture2D::7117596659344694400::1685273888::1685273888::1::::<><>::
-rock_in_water_03.png::CompressedTexture2D::2878649028908325774::1685273888::1685273888::1::::<><>::
-rock_in_water_04.png::CompressedTexture2D::5699498199113705053::1685273888::1685273888::1::::<><>::
-rock_in_water_05.png::CompressedTexture2D::2378167595132342458::1685273888::1685273888::1::::<><>::
-rock_in_water_06.png::CompressedTexture2D::3315667342627225017::1685273888::1685273888::1::::<><>::
-::res://assets/mystic_woods_free_2.1/sprites/particles/::1685273888
-dust_particles_01.png::CompressedTexture2D::4571466734352279883::1685273888::1685273888::1::::<><>::
-::res://assets/mystic_woods_free_2.1/sprites/tilesets/::1685273888
-decor_8x8.png::CompressedTexture2D::504737240084096409::1685273888::1685273888::1::::<><>::
-decor_16x16.png::CompressedTexture2D::3359994214816379583::1685273888::1685273888::1::::<><>::
-fences.png::CompressedTexture2D::1551132468352132357::1685273888::1685273888::1::::<><>::
-grass.png::CompressedTexture2D::9185014136346853088::1685273888::1685273888::1::::<><>::
-plains.png::CompressedTexture2D::123294055393307898::1685273888::1685273888::1::::<><>::
-water1.png::CompressedTexture2D::251584633896050296::1685273888::1685273888::1::::<><>::
-water2.png::CompressedTexture2D::7019930987806357326::1685273888::1685273888::1::::<><>::
-water3.png::CompressedTexture2D::5366675491484489114::1685273888::1685273888::1::::<><>::
-water4.png::CompressedTexture2D::366293282157465275::1685273888::1685273888::1::::<><>::
-water5.png::CompressedTexture2D::8775332798455318767::1685273888::1685273888::1::::<><>::
-water6.png::CompressedTexture2D::467693092001087555::1685273888::1685273888::1::::<><>::
-water_decorations.png::CompressedTexture2D::3004400748625824858::1685273888::1685273888::1::::<><>::
-water_lillies.png::CompressedTexture2D::4153272962943607769::1685273888::1685273888::1::::<><>::
-::res://assets/mystic_woods_free_2.1/sprites/tilesets/floors/::1685273888
-carpet.png::CompressedTexture2D::7788197019222117825::1685273888::1685273888::1::::<><>::
-flooring.png::CompressedTexture2D::8524065009113998918::1685273888::1685273888::1::::<><>::
-wooden.png::CompressedTexture2D::83938680071967793::1685273888::1685273888::1::::<><>::
-::res://assets/mystic_woods_free_2.1/sprites/tilesets/walls/::1685273888
-walls.png::CompressedTexture2D::6007526419584046615::1685273888::1685273888::1::::<><>::
-wooden_door.png::CompressedTexture2D::4764629201965100983::1685273888::1685273888::1::::<><>::
-wooden_door_b.png::CompressedTexture2D::4600079659664057082::1685273888::1685273888::1::::<><>::
-::res://assets/zughy2/::1685273888
-Boss arena.png::CompressedTexture2D::9011831717022160139::1685273888::1685273888::1::::<><>::
-::res://characters/::1685587248
-Yokotuna.gd::GDScript::-1::1685586055::0::1::::<>RigidBody2D<>::
-Yokotuna.tscn::PackedScene::892243420156045656::1685587248::0::1::::<><>::res://characters/Yokotuna.gd<>uid://ckdydugkce4yv<>res://character_components/SlashScript.gd<>uid://bvqk1c7c85gu8<>uid://dsowokq7io7mk<>uid://75vu8hghxu6a<>uid://pu024d3cqnon<>uid://cv44nfnf5vs8r<>uid://dfs2qskucpeou
-::res://character_components/::1685587248
-AnimationParametersComponent.gd::GDScript::-1::1685547429::0::1::::<>Node<>::
-AnimationParametersComponent.tscn::PackedScene::2309286846132103958::1685547147::0::1::::<><>::res://character_components/AnimationParametersComponent.gd
-DeathComponent.gd::GDScript::-1::1685587245::0::1::::<>Node<>::
-DeathComponent.tscn::PackedScene::7549033962130036504::1685587248::0::1::::<><>::res://character_components/DeathComponent.gd
-PhysicsComponent.gd::GDScript::-1::1685464206::0::1::::<>Node<>::
-PhysicsComponent.tscn::PackedScene::3894070199342527777::1685547146::0::1::::<><>::res://character_components/PhysicsComponent.gd
-SlashScript.gd::GDScript::-1::1685573526::0::1::::<>Area2D<>::
-TargetManagerComponent.gd::GDScript::-1::1685565112::0::1::::<>Node<>::
-TargetManagerComponent.tscn::PackedScene::6308458329730929443::1685587248::0::1::::<><>::res://character_components/TargetManagerComponent.gd
-TsuekrattaComponent.gd::GDScript::-1::1685498504::0::1::::<>Node<>::
-TsuekrattaComponent.tscn::PackedScene::1095687879993351421::1685547147::0::1::::<><>::res://character_components/TsuekrattaComponent.gd
-WalkComponent.gd::GDScript::-1::1685584601::0::1::::<>Node<>::
-WalkComponent.tscn::PackedScene::8452923851491837714::1685547146::0::1::::<><>::res://character_components/WalkComponent.gd
-::res://character_scripts/::1685494478
-Attack.gd::GDScript::-1::1685494478::0::1::::Attack<>RefCounted<>::
-::res://game_objects/::1685587248
-ChestSpawner.gd::GDScript::-1::1685402898::0::1::::<>Node<>::
-ChestSpawner.tscn::PackedScene::7949856764668545419::1685587248::0::1::::<><>::res://game_objects/ChestSpawner.gd
-TunaSpawner.gd::GDScript::-1::1685583212::0::1::::<>Node<>::
-TunaSpawner.tscn::PackedScene::4809700921355201044::1685587248::0::1::::<><>::res://game_objects/TunaSpawner.gd
-::res://objects/::1685587125
-Chest.gd::GDScript::-1::1685587125::0::1::::<>RigidBody2D<>::
-Chest.tscn::PackedScene::3372078237603729892::1685584959::0::1::::<><>::res://objects/Chest.gd<>uid://dgymcvlahe3ta<>uid://pu024d3cqnon
-Damageable.gd::GDScript::-1::1685273888::0::1::::Damageable<>Node<>::
+::res://::1686872678
+icon.svg::CompressedTexture2D::7610020705067284417::1684275612::1684275622::1::::<><>::
+README.md::TextFile::-1::1684275697::0::1::::<><>::
+::res://arenas/::1686872661
+arena_01.tscn::PackedScene::1081862853134892836::1686872661::0::1::::<><>::uid://d1nns02mmgn2r<>uid://myhebkgy4qk3<>uid://bobpvvdw2e2x1<>uid://car4covadduuu
+::res://assets/::1684552472
+::res://assets/mystic_woods_free_2.1/::1684276840
+read_me.txt::TextFile::-1::1684276840::0::1::::<><>::
+::res://assets/mystic_woods_free_2.1/sprites/::1684276840
+::res://assets/mystic_woods_free_2.1/sprites/characters/::1684470679
+player.png::CompressedTexture2D::5482386562429862969::1684470662::1684470679::1::::<><>::
+skeleton.png::CompressedTexture2D::298209066631924514::1684276840::1684276896::1::::<><>::
+slime.png::CompressedTexture2D::1850243662844536411::1684276840::1684276896::1::::<><>::
+::res://assets/mystic_woods_free_2.1/sprites/objects/::1684276896
+chest_01.png::CompressedTexture2D::7630673474498685638::1684276840::1684276896::1::::<><>::
+chest_02.png::CompressedTexture2D::4834439486698844747::1684276840::1684276896::1::::<><>::
+objects.png::CompressedTexture2D::2113222081962798458::1684276840::1684276896::1::::<><>::
+rock_in_water_01-sheet.png::CompressedTexture2D::2612276470988929637::1684276840::1684276896::1::::<><>::
+rock_in_water_01.png::CompressedTexture2D::9101080948630524602::1684276840::1684276896::1::::<><>::
+rock_in_water_02.png::CompressedTexture2D::7117596659344694400::1684276840::1684276896::1::::<><>::
+rock_in_water_03.png::CompressedTexture2D::2878649028908325774::1684276840::1684276896::1::::<><>::
+rock_in_water_04.png::CompressedTexture2D::5699498199113705053::1684276840::1684276896::1::::<><>::
+rock_in_water_05.png::CompressedTexture2D::2378167595132342458::1684276840::1684276896::1::::<><>::
+rock_in_water_06.png::CompressedTexture2D::3315667342627225017::1684276840::1684276896::1::::<><>::
+::res://assets/mystic_woods_free_2.1/sprites/particles/::1684276896
+dust_particles_01.png::CompressedTexture2D::4571466734352279883::1684276840::1684276896::1::::<><>::
+::res://assets/mystic_woods_free_2.1/sprites/tilesets/::1684276896
+decor_8x8.png::CompressedTexture2D::504737240084096409::1684276840::1684276896::1::::<><>::
+decor_16x16.png::CompressedTexture2D::3359994214816379583::1684276840::1684276896::1::::<><>::
+fences.png::CompressedTexture2D::1551132468352132357::1684276840::1684276896::1::::<><>::
+grass.png::CompressedTexture2D::9185014136346853088::1684276840::1684276896::1::::<><>::
+plains.png::CompressedTexture2D::123294055393307898::1684276840::1684276896::1::::<><>::
+water1.png::CompressedTexture2D::251584633896050296::1684276840::1684276896::1::::<><>::
+water2.png::CompressedTexture2D::7019930987806357326::1684276840::1684276896::1::::<><>::
+water3.png::CompressedTexture2D::5366675491484489114::1684276840::1684276896::1::::<><>::
+water4.png::CompressedTexture2D::366293282157465275::1684276840::1684276896::1::::<><>::
+water5.png::CompressedTexture2D::8775332798455318767::1684276840::1684276896::1::::<><>::
+water6.png::CompressedTexture2D::467693092001087555::1684276840::1684276896::1::::<><>::
+water_decorations.png::CompressedTexture2D::3004400748625824858::1684276840::1684276896::1::::<><>::
+water_lillies.png::CompressedTexture2D::4153272962943607769::1684276840::1684276896::1::::<><>::
+::res://assets/mystic_woods_free_2.1/sprites/tilesets/floors/::1684276896
+carpet.png::CompressedTexture2D::7788197019222117825::1684276840::1684276896::1::::<><>::
+flooring.png::CompressedTexture2D::8524065009113998918::1684276840::1684276896::1::::<><>::
+wooden.png::CompressedTexture2D::83938680071967793::1684276840::1684276896::1::::<><>::
+::res://assets/mystic_woods_free_2.1/sprites/tilesets/walls/::1684276896
+walls.png::CompressedTexture2D::6007526419584046615::1684276840::1684276896::1::::<><>::
+wooden_door.png::CompressedTexture2D::4764629201965100983::1684276840::1684276896::1::::<><>::
+wooden_door_b.png::CompressedTexture2D::4600079659664057082::1684276840::1684276896::1::::<><>::
+::res://assets/ZeggyGames/::1684552472
+::res://assets/ZeggyGames/Asset Pack-V2/::1684552219
+::res://assets/ZeggyGames/Asset Pack-V2/Air Spin/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Crouch-Idle/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Crouch-Walk/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Ledge Grab-Climb/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Player Roll/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Pull/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V2/Push/::1684553461
+::res://assets/ZeggyGames/Asset Pack-V3/::1684552429
+::res://assets/ZeggyGames/Asset Pack-V3/Basic Sword Attack 1/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Death/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Hurt-Damaged/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Punch/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Sword Idle/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Player Sword Run/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/PlayerIdlePushPull/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/PlayerWalk/::1684553462
+::res://assets/ZeggyGames/Asset Pack-V3/Sword Stab/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/::1684552372
+::res://assets/ZeggyGames/AssetPack-V1/Aseprite Files/::1684552365
+::res://assets/ZeggyGames/AssetPack-V1/Aseprite Files/Player/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/Aseprite Files/Tilemap/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/Sprite Sheets/::1684553462
+::res://assets/ZeggyGames/AssetPack-V1/Tilemap/::1684553462
+::res://assets/zughy2/::1684479982
+Boss arena.png::CompressedTexture2D::9011831717022160139::1684479978::1684479982::1::::<><>::
+::res://characters/::1686872661
+Yokotuna.gd::GDScript::-1::1685672448::0::1::::<>RigidBody2D<>::
+Yokotuna.tscn::PackedScene::892243420156045656::1686872661::0::1::::<><>::res://characters/Yokotuna.gd<>uid://ckdydugkce4yv<>res://character_components/SlashScript.gd<>uid://bvqk1c7c85gu8<>uid://dsowokq7io7mk<>uid://75vu8hghxu6a<>uid://pu024d3cqnon<>uid://cv44nfnf5vs8r<>uid://dfs2qskucpeou
+::res://character_components/::1686872624
+AnimationParametersComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
+AnimationParametersComponent.tscn::PackedScene::2309286846132103958::1685672448::0::1::::<><>::res://character_components/AnimationParametersComponent.gd
+DeathComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
+DeathComponent.tscn::PackedScene::7549033962130036504::1686872624::0::1::::<><>::res://character_components/DeathComponent.gd
+PhysicsComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
+PhysicsComponent.tscn::PackedScene::3894070199342527777::1686872624::0::1::::<><>::res://character_components/PhysicsComponent.gd
+SlashScript.gd::GDScript::-1::1686872314::0::1::::<>Area2D<>::
+TargetManagerComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
+TargetManagerComponent.tscn::PackedScene::6308458329730929443::1686872624::0::1::::<><>::res://character_components/TargetManagerComponent.gd
+TsuekrattaComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
+TsuekrattaComponent.tscn::PackedScene::1095687879993351421::1685672448::0::1::::<><>::res://character_components/TsuekrattaComponent.gd
+WalkComponent.gd::GDScript::-1::1686872316::0::1::::<>Node<>::
+WalkComponent.tscn::PackedScene::8452923851491837714::1685672448::0::1::::<><>::res://character_components/WalkComponent.gd
+::res://character_scripts/::1685672448
+Attack.gd::GDScript::-1::1685672448::0::1::::Attack<>RefCounted<>::
+::res://game_objects/::1686872624
+ChestSpawner.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
+ChestSpawner.tscn::PackedScene::7949856764668545419::1686872624::0::1::::<><>::res://game_objects/ChestSpawner.gd
+TunaSpawner.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
+TunaSpawner.tscn::PackedScene::4809700921355201044::1686872624::0::1::::<><>::res://game_objects/TunaSpawner.gd
+::res://objects/::1686872647
+Chest.gd::GDScript::-1::1686872647::0::1::::<>RigidBody2D<>::
+Chest.tscn::PackedScene::3372078237603729892::1686872624::0::1::::<><>::res://objects/Chest.gd<>uid://dgymcvlahe3ta<>uid://pu024d3cqnon
+Damageable.gd::GDScript::-1::1684688681::0::1::::Damageable<>Node<>::

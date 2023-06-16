@@ -13,6 +13,7 @@ func _on_timer_timeout():
 	objectInstance.tar_group = "Yoko"
 	objectInstance.get_node("Slash").knockback_force = 200
 	objectInstance.get_node("Slash").attack_time = 5
+	objectInstance.verbosity = false
 	
 	# Set Group
 	objectInstance.add_to_group("Chest")
