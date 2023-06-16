@@ -4,7 +4,7 @@ var objectScene = preload("res://characters/Yokotuna.tscn")  # Replace with the 
 
 func _on_timer_timeout():
 	print("Spawn Tuna")
-	var spawnPosition = Vector2(randf_range(-240,240), randf_range(-240,240))
+	var spawnPosition = Vector2(randf_range(-180,180), randf_range(-180,180))
 
 	var objectInstance = objectScene.instantiate()
 

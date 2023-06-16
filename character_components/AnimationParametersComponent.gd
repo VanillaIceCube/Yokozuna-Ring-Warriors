@@ -5,6 +5,7 @@ var parent_node: Node = null # Initializing parent_node
 # Animation related
 @onready var animation_tree: AnimationTree
 @onready var state_machine
+@export var animation_list = "idle"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,10 +18,8 @@ func _process(_delta):
 	
 	# Don't change animation parameters if there is no move input
 	if parent_node.target_direction != Vector2.ZERO:
-		animation_tree.set("parameters/walking/blend_position", parent_node.target_direction)
-		animation_tree.set("parameters/idle/blend_position", parent_node.target_direction)
-		animation_tree.set("parameters/slash/blend_position", parent_node.target_direction)
-		animation_tree.set("parameters/death/blend_position", parent_node.target_direction)
+		for animation in animation_list.split(", "):
+			animation_tree.set("parameters/" + animation + "/blend_position", parent_node.target_direction)
 
 	# Changes animation between walking and idle
 	if parent_node.linear_velocity.length() > 5:

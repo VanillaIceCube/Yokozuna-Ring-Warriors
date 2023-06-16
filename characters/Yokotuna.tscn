@@ -776,7 +776,7 @@ script = ExtResource("1_ji3i0")
 texture = ExtResource("1_skil2")
 hframes = 6
 vframes = 14
-frame = 62
+frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 8)
@@ -803,6 +803,7 @@ parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
 [node name="WalkComponent" parent="." instance=ExtResource("4_wibtp")]
 
 [node name="AnimationParametersComponent" parent="." instance=ExtResource("5_56mg0")]
+animation_list = "walking, idle, slash, death"
 
 [node name="TsuekrattaComponent" parent="." instance=ExtResource("7_bof10")]
 
