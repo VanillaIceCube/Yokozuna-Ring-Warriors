@@ -9,9 +9,5 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	# You die if you're too far from the center; this is a placeholder for now
-	if not parent_node.dead:
-		var distance_from_center = parent_node.global_position.distance_to(Vector2(0, 0))
-		if distance_from_center > 240:
-			parent_node.dead = true
-	else:
+	if parent_node.dead:
 		parent_node.get_node("AnimationParametersComponent").state_machine.travel("death")

@@ -10,3 +10,5 @@ res://game_objects/TunaSpawner.gd
 res://character_components/AnimationParametersComponent.gd
 res://character_components/WalkComponent.gd
 res://character_components/SlashScript.gd
+res://characters/Yokotuna.gd
+res://character_components/DeathComponent.gd
