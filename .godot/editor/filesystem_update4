@@ -10,3 +10,4 @@ res://character_components/WalkComponent.gd
 res://character_components/SlashScript.gd
 res://characters/Yokotuna.gd
 res://game_objects/TunaSpawner.gd
+res://character_scripts/RigidBody2DBase.gd
