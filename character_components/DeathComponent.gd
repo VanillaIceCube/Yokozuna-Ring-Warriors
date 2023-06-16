@@ -15,4 +15,3 @@ func _process(_delta):
 			parent_node.dead = true
 	else:
 		parent_node.get_node("AnimationParametersComponent").state_machine.travel("death")
-		
