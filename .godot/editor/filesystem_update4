@@ -13,3 +13,4 @@ res://game_objects/TunaSpawner.gd
 res://character_scripts/RigidBody2DBase.gd
 res://character_components/AnimationParametersComponent.gd
 res://character_components/DeathComponent.gd
+res://characters/Blueslime.tscn

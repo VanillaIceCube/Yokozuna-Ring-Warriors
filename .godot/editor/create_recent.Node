@@ -1,10 +1,10 @@
+AnimationPlayer
+AnimationTree
+RigidBody2D
 Node
 Timer
-RigidBody2D
 CollisionShape2D
 Area2D
-AnimationTree
-AnimationPlayer
 Sprite2D
 Camera2D
 CharacterBody2D
