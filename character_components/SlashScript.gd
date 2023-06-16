@@ -3,9 +3,10 @@ extends Area2D
 var parent_node: Node = null # Initializing parent_node
 
 var attack_damage := 10
-var knockback_force := 20000
+var knockback_force := 40000
 var attack_range:= 30
 var attack_time:= 1
+var slash_ready:= false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,6 +28,7 @@ func _on_body_entered(body):
 			child.get_hit(attack)
 
 func _on_timer_timeout():
+	slash_ready = true
 	if parent_node.verbosity:
 		print("YokoTuna can attack again!")
 

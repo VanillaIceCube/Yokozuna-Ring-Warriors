@@ -12,3 +12,6 @@ res://character_components/WalkComponent.gd
 res://character_components/SlashScript.gd
 res://characters/Yokotuna.gd
 res://character_components/DeathComponent.gd
+res://power_ups/teleport.tscn
+res://power_ups/Teleport.gd
+res://power_ups/Teleport.tscn

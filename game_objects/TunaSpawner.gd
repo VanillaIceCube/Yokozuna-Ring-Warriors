@@ -15,7 +15,8 @@ func _on_timer_timeout():
 	objectInstance.get_node("Slash").knockback_force = 10000
 	objectInstance.get_node("Slash").attack_time = 5
 	objectInstance.verbosity = false
-	
+	objectInstance.get_node("Teleport").queue_free()
+
 	# Set Group
 	objectInstance.add_to_group("Chest")
 
