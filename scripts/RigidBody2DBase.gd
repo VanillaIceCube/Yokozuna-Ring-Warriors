@@ -7,6 +7,7 @@ var target_position: Vector2 = Vector2(0, 0)
 var target_direction: Vector2 = Vector2.ZERO
 var distance_to_target: float = 0.0
 var linear_damp_var: float = 2.5 # Basically Friction
+var stop_radius: float = 15
 
 # Targetting variables
 var target_is_enemy: bool = false

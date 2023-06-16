@@ -4,7 +4,6 @@ var parent_node: Node = null # Initializing parent_node
 
 # Movement related
 var move_speed: float = 10000
-var stop_radius: float = 15
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,7 +17,7 @@ func _process(delta):
 		parent_node.distance_to_target = parent_node.global_position.distance_to(parent_node.target_position)
 		
 		# This is how we stop
-		if parent_node.distance_to_target <= stop_radius:
+		if parent_node.distance_to_target <= parent_node.stop_radius:
 			parent_node.target_direction = Vector2.ZERO
 		
 		# "Walk" towards your target position

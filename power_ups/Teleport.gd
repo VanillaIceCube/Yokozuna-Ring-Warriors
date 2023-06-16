@@ -11,10 +11,12 @@ func _ready():
 func _on_timer_timeout():
 	if parent_node.verbosity:
 		print("Ready to teleport")
-	if not parent_node.target_is_enemy:
-		teleport()
-	elif parent_node.target_is_enemy and parent_node.get_node("Slash").slash_ready:
-		teleport()
+		
+	if parent_node.distance_to_target > parent_node.stop_radius: # Don't teleport if you're too near the target
+		if not parent_node.target_is_enemy:
+			teleport()
+		elif parent_node.target_is_enemy and parent_node.get_node("Slash").slash_ready:
+			teleport()
 
 func teleport():
 	if $Timer.is_stopped():
