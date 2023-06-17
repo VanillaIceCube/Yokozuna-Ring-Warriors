@@ -23,6 +23,7 @@ shape = SubResource("CircleShape2D_ub7el")
 zoom = Vector2(0.5, 0.5)
 
 [node name="YokoTuna" parent="." groups=["Yoko"] instance=ExtResource("4_1uht4")]
+position = Vector2(-1, -9)
 
 [node name="TunaSpawner" parent="." instance=ExtResource("4_i1jqk")]
 
