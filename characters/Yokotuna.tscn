@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://myhebkgy4qk3"]
+[gd_scene load_steps=60 format=3 uid="uid://myhebkgy4qk3"]
 
 [ext_resource type="Script" path="res://characters/Yokotuna.gd" id="1_ji3i0"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_skil2"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://pu024d3cqnon" path="res://character_components/TsuekrattaComponent.tscn" id="7_bof10"]
 [ext_resource type="PackedScene" uid="uid://cv44nfnf5vs8r" path="res://character_components/TargetManagerComponent.tscn" id="7_fdma2"]
 [ext_resource type="PackedScene" uid="uid://dfs2qskucpeou" path="res://character_components/DeathComponent.tscn" id="8_7hvvn"]
+[ext_resource type="PackedScene" uid="uid://xeunt2v0oagy" path="res://power_ups/Teleport.tscn" id="9_2h03i"]
 [ext_resource type="PackedScene" uid="uid://7oir8kmd7k8d" path="res://power_ups/RockThrow.tscn" id="10_2if6q"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6m82e"]
@@ -825,6 +826,8 @@ shape = SubResource("RectangleShape2D_h6wxw")
 [node name="Timer" type="Timer" parent="Slash"]
 one_shot = true
 autostart = true
+
+[node name="Teleport" parent="." instance=ExtResource("9_2h03i")]
 
 [node name="RockThrow" parent="." instance=ExtResource("10_2if6q")]
 

@@ -36,4 +36,5 @@ func slash():
 	if $Timer.is_stopped():
 		get_node("../AnimationParametersComponent").state_machine.travel("slash")
 		if get_node("../AnimationParametersComponent").state_machine.get_current_node() == "slash":
+			slash_ready = false
 			$Timer.start()

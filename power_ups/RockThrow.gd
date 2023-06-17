@@ -12,7 +12,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if parent_node.target_is_enemy and parent_node.distance_to_target > 50:
+	if parent_node.target_is_enemy and parent_node.distance_to_target > 50 and not parent_node.get_node("Slash").slash_ready:
 		throw_rock()
 
 func _on_timer_timeout():
@@ -28,7 +28,7 @@ func throw_rock():
 
 		# Set the position of the object
 		rock_instance.global_position = spawnPosition
-		rock_instance.apply_central_impulse(800*parent_node.target_direction)
+		rock_instance.apply_central_impulse(1200*parent_node.target_direction)
 
 		# Add the object to the scene
 		parent_node.get_parent().add_child(rock_instance)

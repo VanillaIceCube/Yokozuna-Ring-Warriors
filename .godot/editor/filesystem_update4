@@ -10,3 +10,8 @@ res://power_ups/RockThrow.tscn
 res://arenas/Arena_01.tscn
 res://objects/Rock.gd
 res://power_ups/RockThrow.gd
+res://game_objects/TunaSpawner.gd
+res://characters/Yokotuna.gd
+res://character_components/TsuekrattaComponent.gd
+res://power_ups/Teleport.gd
+res://character_components/SlashScript.gd

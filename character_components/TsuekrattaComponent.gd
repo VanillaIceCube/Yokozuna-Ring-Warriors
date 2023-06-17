@@ -10,8 +10,16 @@ func _ready():
 
 # Handle getting hit
 func get_hit(attack: Attack):
-	tsuerkeratta += attack.attack_damage # Add more tsuerkeraata
+	var real_hit = true
+	if parent_node.has_node("Teleport"):
+		var teleport = parent_node.get_node("Teleport")
+		if teleport.teleport_ready and not parent_node.get_node("Slash").slash_ready:
+			real_hit = false
+			teleport.teleport_away()
+		
+	if real_hit:
+		tsuerkeratta += attack.attack_damage # Add more tsuerkeraata
 
-	# Simple vector knockback for now
-	var hit_vector = (parent_node.global_position - attack.attack_position).normalized()
-	parent_node.apply_central_impulse(hit_vector*attack.knockback_force*(1+tsuerkeratta/100))
+		# Simple vector knockback for now
+		var hit_vector = (parent_node.global_position - attack.attack_position).normalized()
+		parent_node.apply_central_impulse(hit_vector*attack.knockback_force*(1+tsuerkeratta/100))

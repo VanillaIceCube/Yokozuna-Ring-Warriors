@@ -7,7 +7,8 @@
 radius = 13.0384
 
 [node name="Rock" type="RigidBody2D"]
-mass = 160.0
+mass = 480.0
+inertia = 48000.0
 gravity_scale = 0.0
 script = ExtResource("1_i103n")
 
