@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bictmnf7j4e7"]
 
-[ext_resource type="Script" path="res://scripts/RigidBody2DBase.gd" id="1_mqc80"]
+[ext_resource type="Script" path="res://objects/Rock.gd" id="1_i103n"]
 [ext_resource type="Texture2D" uid="uid://dq4vhhv32crjc" path="res://assets/VerzatileDev/BunchOfRocks_Pack/RockPack128x128.png" id="2_n8x8w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_01yid"]
@@ -9,7 +9,7 @@ radius = 13.0384
 [node name="Rock" type="RigidBody2D"]
 mass = 160.0
 gravity_scale = 0.0
-script = ExtResource("1_mqc80")
+script = ExtResource("1_i103n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_n8x8w")

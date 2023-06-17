@@ -22,7 +22,7 @@ func _on_timer_timeout():
 func throw_rock():
 	if $Timer.is_stopped():
 
-		var spawnPosition = parent_node.global_position + (parent_node.target_direction * 15)
+		var spawnPosition = parent_node.global_position + (parent_node.target_direction * 25)
 
 		var rock_instance = rock_scene.instantiate()
 

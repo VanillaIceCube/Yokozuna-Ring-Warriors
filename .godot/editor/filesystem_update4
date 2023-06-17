@@ -1,5 +1,5 @@
+res://objects/Rock.tscn
 res://characters/Yokotuna.tscn
-res://arenas/Arena_01.tscn
 res://character_components/TargetManagerComponent.tscn
 res://game_objects/TunaSpawner.tscn
 res://character_components/DeathComponent.tscn
@@ -7,6 +7,6 @@ res://character_components/PhysicsComponent.tscn
 res://power_ups/Teleport.tscn
 res://particles/explosion.tscn
 res://power_ups/RockThrow.tscn
-res://objects/Rock.tscn
+res://arenas/Arena_01.tscn
+res://objects/Rock.gd
 res://power_ups/RockThrow.gd
-res://game_objects/TunaSpawner.gd
