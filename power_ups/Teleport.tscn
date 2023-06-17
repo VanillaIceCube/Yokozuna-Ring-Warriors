@@ -7,7 +7,7 @@
 script = ExtResource("1_wk3g8")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 7.0
+wait_time = 15.0
 one_shot = true
 autostart = true
 

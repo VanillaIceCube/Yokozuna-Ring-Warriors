@@ -2,7 +2,7 @@ extends Node
 
 var parent_node: Node = null # Initializing parent_node
 
-var teleport_range:= 50
+var teleport_range:= 100
 var teleport_ready:= false
 
 # Called when the node enters the scene tree for the first time.

@@ -8,10 +8,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	# You die if you're too far from the center; this is a placeholder for now
 	if parent_node.dead:
 		parent_node.get_node("AnimationParametersComponent").state_machine.travel("death")
-		
 		if $Timer.is_stopped():
 			$Timer.start()
 

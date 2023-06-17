@@ -16,3 +16,4 @@ res://character_components/TsuekrattaComponent.gd
 res://power_ups/Teleport.gd
 res://character_components/SlashScript.gd
 res://character_components/WalkComponent.gd
+res://character_components/DeathComponent.gd
