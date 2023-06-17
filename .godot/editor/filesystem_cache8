@@ -1,10 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1686954758
+::res://::1686968257
 icon.svg::CompressedTexture2D::7610020705067284417::1684275612::1684275622::1::::<><>::
 README.md::TextFile::-1::1684275697::0::1::::<><>::
-::res://arenas/::1686954916
-Arena_01.tscn::PackedScene::1081862853134892836::1686954916::0::1::::<><>::uid://d1nns02mmgn2r<>uid://myhebkgy4qk3<>uid://car4covadduuu
-::res://assets/::1686956022
+::res://arenas/::1686968043
+Arena_01.tscn::PackedScene::1081862853134892836::1686968043::0::1::::<><>::uid://d1nns02mmgn2r<>uid://myhebkgy4qk3<>uid://car4covadduuu
+::res://assets/::1686968399
 ::res://assets/mystic_woods_free_2.1/::1684276840
 read_me.txt::TextFile::-1::1684276840::0::1::::<><>::
 ::res://assets/mystic_woods_free_2.1/sprites/::1684276840
@@ -47,14 +47,14 @@ wooden.png::CompressedTexture2D::83938680071967793::1684276840::1684276896::1:::
 walls.png::CompressedTexture2D::6007526419584046615::1684276840::1684276896::1::::<><>::
 wooden_door.png::CompressedTexture2D::4764629201965100983::1684276840::1684276896::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::4600079659664057082::1684276840::1684276896::1::::<><>::
-::res://assets/RagnaPixel/::1686955929
+::res://assets/RagnaPixel/::1686956072
 Fire+Sparks-SpriteSheet.png::CompressedTexture2D::8031046896608937013::1686955928::1686956072::1::::<><>::
 Gravity-SpriteSheet.png::CompressedTexture2D::1502436687365034102::1686955928::1686956072::1::::<><>::
 Leaves-SpriteSheet.png::CompressedTexture2D::738107486071626319::1686955928::1686956072::1::::<><>::
 Poison Cloud-SpriteSheet.png::CompressedTexture2D::556897453473134914::1686955929::1686956072::1::::<><>::
 public-license.txt::TextFile::-1::1686955929::0::1::::<><>::
 Smoke-SpriteSheet.png::CompressedTexture2D::9086727037170113900::1686955929::1686956072::1::::<><>::
-::res://assets/RagnaPixel/Fire+Sparks/::1686955928
+::res://assets/RagnaPixel/Fire+Sparks/::1686956072
 Fire+Sparks1.png::CompressedTexture2D::7932322056298143705::1686955928::1686956072::1::::<><>::
 Fire+Sparks2.png::CompressedTexture2D::8716728330361485852::1686955928::1686956072::1::::<><>::
 Fire+Sparks3.png::CompressedTexture2D::5487214256088110351::1686955928::1686956072::1::::<><>::
@@ -74,7 +74,7 @@ Fire+Sparks16.png::CompressedTexture2D::1859021452314332692::1686955928::1686956
 Fire+Sparks17.png::CompressedTexture2D::1368956509408164206::1686955928::1686956072::1::::<><>::
 Fire+Sparks18.png::CompressedTexture2D::2661275793573399298::1686955928::1686956072::1::::<><>::
 Fire+Sparks19.png::CompressedTexture2D::5984140516386157717::1686955928::1686956072::1::::<><>::
-::res://assets/RagnaPixel/Gravity/::1686955928
+::res://assets/RagnaPixel/Gravity/::1686956072
 Gravity1.png::CompressedTexture2D::4893270813699341221::1686955928::1686956072::1::::<><>::
 Gravity2.png::CompressedTexture2D::7561722855236983003::1686955928::1686956072::1::::<><>::
 Gravity3.png::CompressedTexture2D::7978657640402121996::1686955928::1686956072::1::::<><>::
@@ -95,7 +95,7 @@ Gravity17.png::CompressedTexture2D::6113102368846218157::1686955928::1686956072:
 Gravity18.png::CompressedTexture2D::7317402596236925913::1686955928::1686956072::1::::<><>::
 Gravity19.png::CompressedTexture2D::7671061648069904002::1686955928::1686956072::1::::<><>::
 Gravity20.png::CompressedTexture2D::817494104006604029::1686955928::1686956072::1::::<><>::
-::res://assets/RagnaPixel/Leaves/::1686955928
+::res://assets/RagnaPixel/Leaves/::1686956072
 Leaves1.png::CompressedTexture2D::4154983436664980892::1686955928::1686956072::1::::<><>::
 Leaves2.png::CompressedTexture2D::1597935213801197789::1686955928::1686956072::1::::<><>::
 Leaves3.png::CompressedTexture2D::6430553152445375011::1686955928::1686956072::1::::<><>::
@@ -115,7 +115,7 @@ Leaves16.png::CompressedTexture2D::1221750153736888822::1686955928::1686956072::
 Leaves17.png::CompressedTexture2D::7264332826624694246::1686955928::1686956072::1::::<><>::
 Leaves18.png::CompressedTexture2D::3460481676453717120::1686955928::1686956072::1::::<><>::
 Leaves19.png::CompressedTexture2D::3769593936365442735::1686955928::1686956072::1::::<><>::
-::res://assets/RagnaPixel/Poison Cloud/::1686955929
+::res://assets/RagnaPixel/Poison Cloud/::1686956072
 Poison Cloud1.png::CompressedTexture2D::6767623691234417117::1686955929::1686956072::1::::<><>::
 Poison Cloud2.png::CompressedTexture2D::584288042601058766::1686955929::1686956072::1::::<><>::
 Poison Cloud3.png::CompressedTexture2D::228370243370920506::1686955929::1686956072::1::::<><>::
@@ -135,7 +135,7 @@ Poison Cloud16.png::CompressedTexture2D::1896697339418878942::1686955929::168695
 Poison Cloud17.png::CompressedTexture2D::663998750646718323::1686955929::1686956072::1::::<><>::
 Poison Cloud18.png::CompressedTexture2D::6567274797854030646::1686955929::1686956072::1::::<><>::
 Poison Cloud19.png::CompressedTexture2D::7822407067520361880::1686955929::1686956072::1::::<><>::
-::res://assets/RagnaPixel/Smoke/::1686955929
+::res://assets/RagnaPixel/Smoke/::1686956072
 Smoke1.png::CompressedTexture2D::5207929086806892039::1686955929::1686956072::1::::<><>::
 Smoke2.png::CompressedTexture2D::3532042033164166548::1686955929::1686956072::1::::<><>::
 Smoke3.png::CompressedTexture2D::5958632876993943343::1686955929::1686956072::1::::<><>::
@@ -157,7 +157,7 @@ Smoke18.png::CompressedTexture2D::5618474133289710657::1686955929::1686956072::1
 Smoke19.png::CompressedTexture2D::6226505243935988470::1686955929::1686956072::1::::<><>::
 ::res://assets/RustyBulletGames/::1686956002
 ::res://assets/RustyBulletGames/Explosions/::1686956007
-::res://assets/RustyBulletGames/Explosions/Blue/::1686956002
+::res://assets/RustyBulletGames/Explosions/Blue/::1686956073
 explosion_blue_29.png::CompressedTexture2D::8779722749019906256::1686956002::1686956072::1::::<><>::
 explosion_blue_30.png::CompressedTexture2D::6221388916807660309::1686956002::1686956072::1::::<><>::
 explosion_blue_31.png::CompressedTexture2D::7799276877768842321::1686956002::1686956072::1::::<><>::
@@ -214,7 +214,7 @@ explosion_blue_81.png::CompressedTexture2D::3489338539616592841::1686956002::168
 explosion_blue_82.png::CompressedTexture2D::1389763308989546842::1686956002::1686956073::1::::<><>::
 explosion_blue_83.png::CompressedTexture2D::5358277267059711890::1686956002::1686956073::1::::<><>::
 explosion_blue_84.png::CompressedTexture2D::4225768155222342468::1686956002::1686956073::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Cyan/::1686956003
+::res://assets/RustyBulletGames/Explosions/Cyan/::1686956073
 exposion_cyan_29.png::CompressedTexture2D::9089815675022136388::1686956002::1686956073::1::::<><>::
 exposion_cyan_30.png::CompressedTexture2D::8714575387054020745::1686956002::1686956073::1::::<><>::
 exposion_cyan_31.png::CompressedTexture2D::4154204920106758780::1686956002::1686956073::1::::<><>::
@@ -271,7 +271,7 @@ exposion_cyan_81.png::CompressedTexture2D::8145231648411591203::1686956003::1686
 exposion_cyan_82.png::CompressedTexture2D::4622869093927690350::1686956003::1686956073::1::::<><>::
 exposion_cyan_83.png::CompressedTexture2D::186826349645464381::1686956003::1686956073::1::::<><>::
 exposion_cyan_84.png::CompressedTexture2D::2716317666541237992::1686956003::1686956073::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Grayscale/::1686956004
+::res://assets/RustyBulletGames/Explosions/Grayscale/::1686956073
 explosion_grayscale_29.png::CompressedTexture2D::5752940156671064426::1686956003::1686956073::1::::<><>::
 explosion_grayscale_30.png::CompressedTexture2D::385896434942411236::1686956003::1686956073::1::::<><>::
 explosion_grayscale_31.png::CompressedTexture2D::970067729325395858::1686956003::1686956073::1::::<><>::
@@ -328,7 +328,7 @@ explosion_grayscale_81.png::CompressedTexture2D::8112834031924740038::1686956004
 explosion_grayscale_82.png::CompressedTexture2D::3729314823884065029::1686956004::1686956073::1::::<><>::
 explosion_grayscale_83.png::CompressedTexture2D::309817296084673333::1686956004::1686956073::1::::<><>::
 explosion_grayscale_84.png::CompressedTexture2D::1165215588267933454::1686956004::1686956073::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Green/::1686956004
+::res://assets/RustyBulletGames/Explosions/Green/::1686956073
 exposion_green_29.png::CompressedTexture2D::7526725353749607397::1686956004::1686956073::1::::<><>::
 exposion_green_30.png::CompressedTexture2D::4765376820548103399::1686956004::1686956073::1::::<><>::
 exposion_green_31.png::CompressedTexture2D::4625649139345404333::1686956004::1686956073::1::::<><>::
@@ -385,7 +385,7 @@ exposion_green_81.png::CompressedTexture2D::1398034346903546090::1686956004::168
 exposion_green_82.png::CompressedTexture2D::4497487321052939916::1686956004::1686956071::1::::<><>::
 exposion_green_83.png::CompressedTexture2D::7349956134985523531::1686956004::1686956071::1::::<><>::
 exposion_green_84.png::CompressedTexture2D::907968125856305072::1686956004::1686956071::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Orange(normal)/::1686956005
+::res://assets/RustyBulletGames/Explosions/Orange(normal)/::1686956072
 orange_explosion_29.png::CompressedTexture2D::5425935028953385265::1686956004::1686956071::1::::<><>::
 orange_explosion_30.png::CompressedTexture2D::5630771766272529692::1686956004::1686956071::1::::<><>::
 orange_explosion_31.png::CompressedTexture2D::8502212994043607921::1686956004::1686956071::1::::<><>::
@@ -442,7 +442,7 @@ orange_explosion_81.png::CompressedTexture2D::2129543418033634392::1686956005::1
 orange_explosion_82.png::CompressedTexture2D::8692520752527728366::1686956005::1686956072::1::::<><>::
 orange_explosion_83.png::CompressedTexture2D::6159708504159368013::1686956005::1686956071::1::::<><>::
 orange_explosion_84.png::CompressedTexture2D::5383433703103477820::1686956005::1686956071::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Pink/::1686956006
+::res://assets/RustyBulletGames/Explosions/Pink/::1686956071
 explosion_pink_29.png::CompressedTexture2D::2140690029730328228::1686956005::1686956071::1::::<><>::
 explosion_pink_30.png::CompressedTexture2D::7016316698098963444::1686956005::1686956071::1::::<><>::
 explosion_pink_31.png::CompressedTexture2D::7900667833655685302::1686956005::1686956071::1::::<><>::
@@ -499,7 +499,7 @@ explosion_pink_81.png::CompressedTexture2D::4112859085944535293::1686956006::168
 explosion_pink_82.png::CompressedTexture2D::2325315626028160864::1686956006::1686956071::1::::<><>::
 explosion_pink_83.png::CompressedTexture2D::8200705542503021430::1686956006::1686956071::1::::<><>::
 explosion_pink_84.png::CompressedTexture2D::6588811085499510329::1686956006::1686956071::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Purple/::1686956007
+::res://assets/RustyBulletGames/Explosions/Purple/::1686956072
 explosion_purple_29.png::CompressedTexture2D::1126286435075434995::1686956006::1686956071::1::::<><>::
 explosion_purple_30.png::CompressedTexture2D::351850654713084795::1686956006::1686956071::1::::<><>::
 explosion_purple_31.png::CompressedTexture2D::5401887231626342752::1686956006::1686956071::1::::<><>::
@@ -556,7 +556,7 @@ explosion_purple_81.png::CompressedTexture2D::6586141441227626177::1686956006::1
 explosion_purple_82.png::CompressedTexture2D::422205676582874730::1686956007::1686956072::1::::<><>::
 explosion_purple_83.png::CompressedTexture2D::7259349287333967198::1686956007::1686956072::1::::<><>::
 explosion_purple_84.png::CompressedTexture2D::6390716323630704000::1686956007::1686956072::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Red/::1686956007
+::res://assets/RustyBulletGames/Explosions/Red/::1686956072
 explosion_red_29.png::CompressedTexture2D::6414667335001879548::1686956007::1686956072::1::::<><>::
 explosion_red_30.png::CompressedTexture2D::5673172442607567959::1686956007::1686956072::1::::<><>::
 explosion_red_31.png::CompressedTexture2D::7584265788277498006::1686956007::1686956072::1::::<><>::
@@ -613,7 +613,7 @@ explosion_red_81.png::CompressedTexture2D::2265832636479382846::1686956007::1686
 explosion_red_82.png::CompressedTexture2D::2865145751842876561::1686956007::1686956072::1::::<><>::
 explosion_red_83.png::CompressedTexture2D::6538551999856774492::1686956007::1686956072::1::::<><>::
 explosion_red_84.png::CompressedTexture2D::834049054239417990::1686956007::1686956072::1::::<><>::
-::res://assets/RustyBulletGames/Explosions/Yellow/::1686956008
+::res://assets/RustyBulletGames/Explosions/Yellow/::1686956072
 explosion_yellow_29.png::CompressedTexture2D::659586208370169905::1686956007::1686956072::1::::<><>::
 explosion_yellow_30.png::CompressedTexture2D::3495406846500877564::1686956007::1686956072::1::::<><>::
 explosion_yellow_31.png::CompressedTexture2D::5911522120960690376::1686956007::1686956072::1::::<><>::
@@ -670,6 +670,12 @@ explosion_yellow_81.png::CompressedTexture2D::2252876103811396908::1686956008::1
 explosion_yellow_82.png::CompressedTexture2D::6348078147485203142::1686956008::1686956072::1::::<><>::
 explosion_yellow_83.png::CompressedTexture2D::3322381232360799053::1686956008::1686956072::1::::<><>::
 explosion_yellow_84.png::CompressedTexture2D::3141262956550156287::1686956008::1686956072::1::::<><>::
+::res://assets/VerzatileDev/::1686968392
+::res://assets/VerzatileDev/BunchOfRocks_Pack/::1686968392
+All_Rights_Reserved_AssetLicense.txt::TextFile::-1::1686968392::0::1::::<><>::
+RockPack128x128.png::CompressedTexture2D::8343438462973700088::1686968392::1686968404::1::::<><>::
+RockPack384x384.png::CompressedTexture2D::6626472695216091627::1686968392::1686968404::1::::<><>::
+RockPack1080x1080.png::CompressedTexture2D::2118010489836517792::1686968392::1686968404::1::::<><>::
 ::res://assets/ZeggyGames/::1684552472
 ::res://assets/ZeggyGames/Asset Pack-V2/::1684552219
 ::res://assets/ZeggyGames/Asset Pack-V2/Air Spin/::1684553461
@@ -697,30 +703,35 @@ explosion_yellow_84.png::CompressedTexture2D::3141262956550156287::1686956008::1
 ::res://assets/ZeggyGames/AssetPack-V1/Tilemap/::1684553462
 ::res://assets/zughy2/::1684479982
 Boss arena.png::CompressedTexture2D::9011831717022160139::1684479978::1684479982::1::::<><>::
-::res://characters/::1686954916
-Yokotuna.gd::GDScript::-1::1686952046::0::1::::<>RigidBody2DBase<>::
-Yokotuna.tscn::PackedScene::892243420156045656::1686954916::0::1::::<><>::res://characters/Yokotuna.gd<>uid://ckdydugkce4yv<>res://character_components/SlashScript.gd<>uid://bvqk1c7c85gu8<>uid://dsowokq7io7mk<>uid://75vu8hghxu6a<>uid://pu024d3cqnon<>uid://cv44nfnf5vs8r<>uid://dfs2qskucpeou<>uid://xeunt2v0oagy
-::res://character_components/::1686954917
+::res://characters/::1686968043
+Yokotuna.gd::GDScript::-1::1686960974::0::1::::<>RigidBody2DBase<>::
+Yokotuna.tscn::PackedScene::892243420156045656::1686968043::0::1::::<><>::res://characters/Yokotuna.gd<>uid://ckdydugkce4yv<>res://character_components/SlashScript.gd<>uid://bvqk1c7c85gu8<>uid://dsowokq7io7mk<>uid://75vu8hghxu6a<>uid://pu024d3cqnon<>uid://cv44nfnf5vs8r<>uid://dfs2qskucpeou<>uid://xeunt2v0oagy
+::res://character_components/::1686968043
 AnimationParametersComponent.gd::GDScript::-1::1686949167::0::1::::<>Node<>::
 AnimationParametersComponent.tscn::PackedScene::2309286846132103958::1685672448::0::1::::<><>::res://character_components/AnimationParametersComponent.gd
 DeathComponent.gd::GDScript::-1::1686952584::0::1::::<>Node<>::
-DeathComponent.tscn::PackedScene::7549033962130036504::1686954916::0::1::::<><>::res://character_components/DeathComponent.gd
+DeathComponent.tscn::PackedScene::7549033962130036504::1686968043::0::1::::<><>::res://character_components/DeathComponent.gd
 PhysicsComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
-PhysicsComponent.tscn::PackedScene::3894070199342527777::1686954917::0::1::::<><>::res://character_components/PhysicsComponent.gd
-SlashScript.gd::GDScript::-1::1686954748::0::1::::<>Area2D<>::
+PhysicsComponent.tscn::PackedScene::3894070199342527777::1686968043::0::1::::<><>::res://character_components/PhysicsComponent.gd
+SlashScript.gd::GDScript::-1::1686961192::0::1::::<>Area2D<>::
 TargetManagerComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
-TargetManagerComponent.tscn::PackedScene::6308458329730929443::1686954916::0::1::::<><>::res://character_components/TargetManagerComponent.gd
+TargetManagerComponent.tscn::PackedScene::6308458329730929443::1686968043::0::1::::<><>::res://character_components/TargetManagerComponent.gd
 TsuekrattaComponent.gd::GDScript::-1::1685672448::0::1::::<>Node<>::
 TsuekrattaComponent.tscn::PackedScene::1095687879993351421::1685672448::0::1::::<><>::res://character_components/TsuekrattaComponent.gd
 WalkComponent.gd::GDScript::-1::1686954840::0::1::::<>Node<>::
 WalkComponent.tscn::PackedScene::8452923851491837714::1685672448::0::1::::<><>::res://character_components/WalkComponent.gd
-::res://game_objects/::1686954916
+::res://game_objects/::1686968043
 TunaSpawner.gd::GDScript::-1::1686954310::0::1::::<>Node<>::
-TunaSpawner.tscn::PackedScene::4809700921355201044::1686954916::0::1::::<><>::res://game_objects/TunaSpawner.gd
-::res://objects/::1686952826
-::res://power_ups/::1686954917
-Teleport.gd::GDScript::-1::1686954914::0::1::::<>Node<>::
-Teleport.tscn::PackedScene::1623839510508551620::1686954917::0::1::::<><>::res://power_ups/Teleport.gd
+TunaSpawner.tscn::PackedScene::4809700921355201044::1686968043::0::1::::<><>::res://game_objects/TunaSpawner.gd
+::res://objects/::1686968257
+Rock.tscn::PackedScene::86859880373222980::1686968246::0::1::::<><>::res://scripts/RigidBody2DBase.gd
+::res://particles/::1686968043
+explosion.tscn::PackedScene::8589182760788162519::1686968043::0::1::::<><>::uid://qbt1jvkcrydf
+::res://power_ups/::1686968211
+RockThrow.gd::GDScript::-1::1686968209::0::1::::<>Node<>::
+RockThrow.tscn::PackedScene::2275462128681491517::1686968211::0::1::::<><>::res://power_ups/RockThrow.gd
+Teleport.gd::GDScript::-1::1686967134::0::1::::<>Node<>::
+Teleport.tscn::PackedScene::1623839510508551620::1686968043::0::1::::<><>::res://power_ups/Teleport.gd<>uid://dumwt5pyisrrb
 ::res://scripts/::1686954848
 Attack.gd::GDScript::-1::1685672448::0::1::::Attack<>RefCounted<>::
 RigidBody2DBase.gd::GDScript::-1::1686954848::0::1::::RigidBody2DBase<>RigidBody2D<>::

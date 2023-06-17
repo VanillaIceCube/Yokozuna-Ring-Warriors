@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://7oir8kmd7k8d"]
+
+[ext_resource type="Script" path="res://power_ups/RockThrow.gd" id="1_4w16c"]
+
+[node name="RockThrow" type="Node"]
+script = ExtResource("1_4w16c")
+
+[node name="Timer" type="Timer" parent="."]

@@ -1,11 +1,12 @@
-Timer
-GPUParticles2D
-Node
-Area2D
+Sprite2D
 CollisionShape2D
+RigidBody2DBase
+Timer
+Node
+GPUParticles2D
+Area2D
 RigidBody2D
 AnimationTree
 AnimationPlayer
-Sprite2D
 Camera2D
 CharacterBody2D
