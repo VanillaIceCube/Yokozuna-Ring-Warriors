@@ -8,3 +8,5 @@ res://power_ups/Teleport.tscn
 res://particles/explosion.tscn
 res://power_ups/RockThrow.tscn
 res://objects/Rock.tscn
+res://power_ups/RockThrow.gd
+res://game_objects/TunaSpawner.gd

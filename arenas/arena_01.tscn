@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://poceglpx5tcu"]
+[gd_scene load_steps=5 format=3 uid="uid://poceglpx5tcu"]
 
 [ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="1_dfc0p"]
 [ext_resource type="PackedScene" uid="uid://myhebkgy4qk3" path="res://characters/Yokotuna.tscn" id="4_1uht4"]
-[ext_resource type="PackedScene" uid="uid://bictmnf7j4e7" path="res://objects/Rock.tscn" id="4_4xmq1"]
 [ext_resource type="PackedScene" uid="uid://car4covadduuu" path="res://game_objects/TunaSpawner.tscn" id="4_i1jqk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ub7el"]
@@ -26,19 +25,5 @@ zoom = Vector2(0.5, 0.5)
 [node name="YokoTuna" parent="." groups=["Yoko"] instance=ExtResource("4_1uht4")]
 
 [node name="TunaSpawner" parent="." instance=ExtResource("4_i1jqk")]
-
-[node name="Rock" parent="." instance=ExtResource("4_4xmq1")]
-position = Vector2(-27, 24)
-
-[node name="Rock2" parent="." instance=ExtResource("4_4xmq1")]
-position = Vector2(-18, -17)
-mass = 480.0
-inertia = 48000.0
-
-[node name="Rock3" parent="." instance=ExtResource("4_4xmq1")]
-position = Vector2(31, -7)
-
-[node name="Rock4" parent="." instance=ExtResource("4_4xmq1")]
-position = Vector2(22, 31)
 
 [connection signal="body_exited" from="Area2D" to="YokoTuna" method="_on_area_2d_body_exited"]

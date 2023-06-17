@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://pu024d3cqnon" path="res://character_components/TsuekrattaComponent.tscn" id="7_bof10"]
 [ext_resource type="PackedScene" uid="uid://cv44nfnf5vs8r" path="res://character_components/TargetManagerComponent.tscn" id="7_fdma2"]
 [ext_resource type="PackedScene" uid="uid://dfs2qskucpeou" path="res://character_components/DeathComponent.tscn" id="8_7hvvn"]
-[ext_resource type="PackedScene" uid="uid://xeunt2v0oagy" path="res://power_ups/Teleport.tscn" id="10_vc8hb"]
+[ext_resource type="PackedScene" uid="uid://7oir8kmd7k8d" path="res://power_ups/RockThrow.tscn" id="10_2if6q"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6m82e"]
 radius = 7.0
@@ -826,7 +826,7 @@ shape = SubResource("RectangleShape2D_h6wxw")
 one_shot = true
 autostart = true
 
-[node name="Teleport" parent="." instance=ExtResource("10_vc8hb")]
+[node name="RockThrow" parent="." instance=ExtResource("10_2if6q")]
 
 [node name="TargetManagerComponent" parent="." instance=ExtResource("7_fdma2")]
 

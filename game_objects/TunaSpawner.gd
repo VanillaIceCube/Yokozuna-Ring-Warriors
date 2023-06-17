@@ -1,6 +1,6 @@
 extends Node
 
-var objectScene = preload("res://characters/Yokotuna.tscn")  # Replace with the path to your object scene
+var objectScene = preload("res://characters/Yokotuna.tscn") 
 
 func _on_timer_timeout():
 	print("Spawn Tuna")
@@ -15,7 +15,7 @@ func _on_timer_timeout():
 	objectInstance.get_node("Slash").knockback_force = 10000
 	objectInstance.get_node("Slash").attack_time = 5
 	objectInstance.verbosity = false
-	objectInstance.get_node("Teleport").queue_free()
+	objectInstance.get_node("RockThrow").queue_free()
 
 	# Set Group
 	objectInstance.add_to_group("Chest")
