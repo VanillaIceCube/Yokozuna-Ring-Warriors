@@ -25,6 +25,7 @@ damping_max = 81.65
 scale_curve = SubResource("CurveTexture_60c8q")
 
 [node name="GPUParticles2D" type="GPUParticles2D"]
+show_behind_parent = true
 emitting = false
 amount = 36
 sub_emitter = NodePath(".")

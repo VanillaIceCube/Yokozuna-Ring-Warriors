@@ -1,8 +1,14 @@
 extends Node
 
 var objectScene = preload("res://characters/Yokotuna.tscn") 
+var tunas = 1
 
 func _on_timer_timeout():
+	for i in range(round(tunas)):
+		spawn_tuna()
+	tunas += 0.5
+
+func spawn_tuna():
 	print("Spawn Tuna")
 	var spawnPosition = Vector2(randf_range(-180,180), randf_range(-180,180))
 

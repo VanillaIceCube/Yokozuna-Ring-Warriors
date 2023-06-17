@@ -12,7 +12,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if parent_node.target_is_enemy and parent_node.distance_to_target > 50 and not parent_node.get_node("Slash").slash_ready:
+	if parent_node.target_is_enemy and parent_node.distance_to_target > 25 and not parent_node.get_node("Slash").slash_ready:
 		throw_rock()
 
 func _on_timer_timeout():
