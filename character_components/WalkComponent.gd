@@ -22,9 +22,3 @@ func _process(delta):
 		
 		# "Walk" towards your target position
 		parent_node.apply_central_force(delta*100*parent_node.target_direction * move_speed)
-
-# This is a temporary way to choose the target position
-func _input(event: InputEvent):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		parent_node.target_position = parent_node.get_global_mouse_position()
-		print("Clicked position in world coordinates:", parent_node.target_position)
