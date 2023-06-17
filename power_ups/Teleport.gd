@@ -8,14 +8,14 @@ var teleport_distance:= 50
 func _ready():
 	parent_node = get_parent() # Setting the parent_node
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	if parent_node.target_is_enemy and parent_node.get_node("Slash").slash_ready:
+		teleport()
+
 func _on_timer_timeout():
 	if parent_node.verbosity:
 		print("Ready to teleport")
-		
-	if not parent_node.target_is_enemy:
-		teleport()
-	elif parent_node.target_is_enemy and parent_node.get_node("Slash").slash_ready:
-		teleport()
 
 func teleport():
 	if $Timer.is_stopped():

@@ -811,8 +811,6 @@ animation_list = "walking, idle, slash, death"
 
 [node name="TsuekrattaComponent" parent="." instance=ExtResource("7_bof10")]
 
-[node name="TargetManagerComponent" parent="." instance=ExtResource("7_fdma2")]
-
 [node name="DeathComponent" parent="." instance=ExtResource("8_7hvvn")]
 
 [node name="Slash" type="Area2D" parent="."]
@@ -829,6 +827,8 @@ one_shot = true
 autostart = true
 
 [node name="Teleport" parent="." instance=ExtResource("10_vc8hb")]
+
+[node name="TargetManagerComponent" parent="." instance=ExtResource("7_fdma2")]
 
 [connection signal="body_entered" from="Slash" to="Slash" method="_on_body_entered"]
 [connection signal="timeout" from="Slash/Timer" to="Slash" method="_on_timer_timeout"]
