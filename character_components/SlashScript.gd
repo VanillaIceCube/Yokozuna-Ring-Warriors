@@ -23,7 +23,7 @@ func _on_body_entered(body):
 		if child.has_method("get_hit"):
 			var attack = Attack.new()
 			attack.attack_damage = attack_damage
-			attack.knockback_force = knockback_force
+			attack.knockback_force = knockback_force*(1+parent_node.linear_velocity.length()*.01)
 			attack.attack_position = parent_node.global_position
 			child.get_hit(attack)
 

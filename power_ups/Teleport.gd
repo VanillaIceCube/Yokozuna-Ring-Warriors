@@ -26,6 +26,7 @@ func teleport():
 		var maxTeleportDistance = min(teleport_distance, parent_node.distance_to_target)
 		var teleportVector = parent_node.target_direction * maxTeleportDistance
 		parent_node.global_position += teleportVector
+		parent_node.apply_central_impulse(25000*parent_node.target_direction)
 	
 		create_particle($EndParticles)
 		
