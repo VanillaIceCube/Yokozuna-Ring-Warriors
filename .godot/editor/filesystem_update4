@@ -8,3 +8,5 @@ res://game_objects/TunaSpawner.tscn
 res://character_components/DeathComponent.tscn
 res://character_components/PhysicsComponent.tscn
 res://power_ups/Teleport.tscn
+res://character_components/SlashScript.gd
+res://particles/explosion.tscn

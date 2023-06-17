@@ -1,13 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://xeunt2v0oagy"]
+[gd_scene load_steps=3 format=3 uid="uid://xeunt2v0oagy"]
 
 [ext_resource type="Script" path="res://power_ups/Teleport.gd" id="1_wk3g8"]
+[ext_resource type="PackedScene" uid="uid://dumwt5pyisrrb" path="res://particles/explosion.tscn" id="2_12fnf"]
 
 [node name="Teleport" type="Node"]
 script = ExtResource("1_wk3g8")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 15.0
+wait_time = 2.5
 one_shot = true
 autostart = true
+
+[node name="StartParticles" parent="." instance=ExtResource("2_12fnf")]
+scale = Vector2(0.1, 0.1)
+
+[node name="EndParticles" parent="." instance=ExtResource("2_12fnf")]
+scale = Vector2(0.1, 0.1)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

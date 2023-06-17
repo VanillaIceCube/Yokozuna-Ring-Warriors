@@ -12,17 +12,25 @@ func _on_timer_timeout():
 	if parent_node.verbosity:
 		print("Ready to teleport")
 		
-	if parent_node.distance_to_target > parent_node.stop_radius: # Don't teleport if you're too near the target
-		if not parent_node.target_is_enemy:
-			teleport()
-		elif parent_node.target_is_enemy and parent_node.get_node("Slash").slash_ready:
-			teleport()
+	if not parent_node.target_is_enemy:
+		teleport()
+	elif parent_node.target_is_enemy and parent_node.get_node("Slash").slash_ready:
+		teleport()
 
 func teleport():
 	if $Timer.is_stopped():
+		create_particle($StartParticles)
+		
 		if parent_node.verbosity:
 			print("Ready to teleport")
 		var maxTeleportDistance = min(teleport_distance, parent_node.distance_to_target)
 		var teleportVector = parent_node.target_direction * maxTeleportDistance
 		parent_node.global_position += teleportVector
+	
+		create_particle($EndParticles)
+		
 		$Timer.start()
+
+func create_particle(particle):
+	particle.global_position = parent_node.global_position
+	particle.emitting = true

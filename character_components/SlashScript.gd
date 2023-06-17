@@ -32,12 +32,6 @@ func _on_timer_timeout():
 	if parent_node.verbosity:
 		print("YokoTuna can attack again!")
 
-# Whenever an input is pressed
-func _input(event):
-	# Pressing R swings sword
-	if event.is_action_pressed("swing_sword"):
-		slash()
-
 func slash():
 	if $Timer.is_stopped():
 		get_node("../AnimationParametersComponent").state_machine.travel("slash")
