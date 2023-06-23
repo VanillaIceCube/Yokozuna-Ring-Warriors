@@ -5,7 +5,7 @@ var parent_node: Node = null # Initializing parent_node
 var attack_damage := 10
 var knockback_force := 40000
 var attack_range:= 30
-var attack_time:= 3
+var attack_time:= .5
 var slash_ready:= false
 
 # Called when the node enters the scene tree for the first time.

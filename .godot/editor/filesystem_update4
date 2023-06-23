@@ -13,3 +13,4 @@ res://game_objects/TunaSpawner.gd
 res://character_components/TsuekrattaComponent.gd
 res://power_ups/Dash.tscn
 res://power_ups/Dash.gd
+res://character_components/SlashScript.gd
