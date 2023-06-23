@@ -29,7 +29,7 @@ func throw_rock():
 		# Set the position of the object
 		rock_instance.global_position = spawnPosition
 		rock_instance.apply_central_impulse(1200*parent_node.target_direction)
-		rock_instance.apply_torque_impulse(5000000*randf_range(-1, 1))
+		rock_instance.apply_torque_impulse(5000000 * sign(randf_range(-1, 1)))
 
 		# Add the object to the scene
 		parent_node.get_parent().add_child(rock_instance)

@@ -22,4 +22,4 @@ func get_hit(attack: Attack):
 
 		# Simple vector knockback for now
 		var hit_vector = (parent_node.global_position - attack.attack_position).normalized()
-		parent_node.apply_central_impulse(hit_vector*attack.knockback_force*(1+tsuerkeratta/100))
+		parent_node.apply_central_impulse(hit_vector*attack.knockback_force*(1+tsuerkeratta/500))

@@ -21,8 +21,14 @@ func spawn_tuna():
 	objectInstance.get_node("Slash").knockback_force = 10000
 	objectInstance.get_node("Slash").attack_time = 5
 	objectInstance.verbosity = false
-	objectInstance.get_node("RockThrow").queue_free()
-	objectInstance.get_node("Teleport").queue_free()
+	
+	var nodesToFree = ["Teleport", "RockThrow", "Dash"]
+	for nodeName in nodesToFree:
+		var node = objectInstance.get_node(nodeName)
+		if node:
+			node.queue_free()
+
+	objectInstance.modulate = Color(1, 0, 0)
 
 	# Set Group
 	objectInstance.add_to_group("Chest")
