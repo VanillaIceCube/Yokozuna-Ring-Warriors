@@ -1,5 +1,15 @@
 extends RigidBody2DBase
 
+var parent_node: Node = null # Initializing parent_node
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	parent_node = get_parent()
+	
+	# connecting the signal for body_exit
+	var ArenaFloorHitbox = parent_node.get_node("Arena_01").get_node("ArenaFloorHitbox")
+	ArenaFloorHitbox.body_exited.connect(_on_area_2d_body_exited)
+
 func _on_area_2d_body_exited(body):
 	body.dead = true
 	if has_node("Teleport"):
@@ -7,7 +17,6 @@ func _on_area_2d_body_exited(body):
 		if teleport.teleport_ready:
 			teleport.teleport_away()
 			body.dead = false
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
