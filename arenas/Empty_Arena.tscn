@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwvaofg0upxsb"]
-
-[ext_resource type="Script" path="res://arenas/Empty_Arena.gd" id="1_k7nhm"]
-
-[node name="Empty Arena" type="Node"]
-script = ExtResource("1_k7nhm")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.5, 0.5)

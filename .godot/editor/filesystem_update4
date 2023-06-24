@@ -11,5 +11,3 @@ res://power_ups/RockThrow.tscn
 res://power_ups/Dash.tscn
 res://menus/main_menu.tscn
 res://menus/main_menu.gd
-res://arenas/Empty_Arena.tscn
-res://arenas/Empty_Arena.gd
