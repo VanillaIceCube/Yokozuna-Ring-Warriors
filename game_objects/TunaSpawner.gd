@@ -24,9 +24,10 @@ func spawn_tuna():
 	
 	var nodesToFree = ["Teleport", "RockThrow", "Dash"]
 	for nodeName in nodesToFree:
-		var node = objectInstance.get_node(nodeName)
-		if node:
+		if objectInstance.has_node(nodeName):
+			var node = objectInstance.get_node(nodeName)
 			node.queue_free()
+
 
 	objectInstance.modulate = Color(1, 0, 0)
 

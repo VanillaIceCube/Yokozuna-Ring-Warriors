@@ -7,8 +7,6 @@ func _ready():
 	super._ready()
 	parent_node = get_parent()
 	
-	self.add_to_group("Yoko")
-	
 	# connecting the signal for body_exit
 	var ArenaFloorHitbox = parent_node.get_node("Arena_01").get_node("ArenaFloorHitbox")
 	ArenaFloorHitbox.body_exited.connect(_on_area_2d_body_exited)

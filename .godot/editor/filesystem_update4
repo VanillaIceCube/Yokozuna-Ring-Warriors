@@ -2,6 +2,7 @@ res://menus/main_menu.tscn
 res://arenas/Arena_01.tscn
 res://characters/Yokotuna.tscn
 res://game_objects/BaseRoom.tscn
-res://characters/Yokotuna.gd
 res://game_objects/TunaSpawner.tscn
-res://character_components/WalkComponent.gd
+res://game_objects/TunaSpawner.gd
+res://characters/Yokotuna.gd
+res://game_objects/BaseRoom.gd
