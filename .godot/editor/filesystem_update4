@@ -1,13 +1,3 @@
-res://characters/Yokotuna.tscn
 res://arenas/Arena_01.tscn
-res://character_components/TargetManagerComponent.tscn
-res://game_objects/TunaSpawner.tscn
-res://character_components/DeathComponent.tscn
-res://character_components/PhysicsComponent.tscn
-res://power_ups/Teleport.tscn
-res://particles/explosion.tscn
-res://objects/Rock.tscn
-res://power_ups/RockThrow.tscn
-res://power_ups/Dash.tscn
 res://menus/main_menu.tscn
-res://menus/main_menu.gd
+res://characters/Yokotuna.tscn

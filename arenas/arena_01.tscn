@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://poceglpx5tcu"]
 
-[ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="1_dfc0p"]
+[ext_resource type="Texture2D" uid="uid://cwi2fd2x13bxu" path="res://assets/zughy2/Boss arena extended.png" id="1_ueemc"]
 [ext_resource type="PackedScene" uid="uid://myhebkgy4qk3" path="res://characters/Yokotuna.tscn" id="4_1uht4"]
 [ext_resource type="PackedScene" uid="uid://car4covadduuu" path="res://game_objects/TunaSpawner.tscn" id="4_i1jqk"]
 
@@ -11,7 +11,7 @@ radius = 242.002
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-texture = ExtResource("1_dfc0p")
+texture = ExtResource("1_ueemc")
 
 [node name="Area2D" type="Area2D" parent="."]
 
