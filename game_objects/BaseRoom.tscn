@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7wtjetyl5gnn"]
-
-[ext_resource type="Script" path="res://game_objects/BaseRoom.gd" id="1_wrg41"]
-
-[node name="Base_Room" type="Node"]
-script = ExtResource("1_wrg41")

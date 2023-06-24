@@ -1,7 +1,7 @@
-Node
 Button
 VBoxContainer
 Timer
+Node
 Area2D
 RigidBody2D
 Sprite2D

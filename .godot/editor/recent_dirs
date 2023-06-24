@@ -1,4 +1,3 @@
-res://game_objects
 res://assets/zughy2
 res://menus
 res://power_ups
@@ -7,6 +6,7 @@ res://objects
 res://assets/RustyBulletGames/Explosions/Purple
 res://particles
 res://character_components
+res://game_objects
 res://characters
 res://assets/mystic_woods_free_2.1/sprites/objects
 res://arenas
