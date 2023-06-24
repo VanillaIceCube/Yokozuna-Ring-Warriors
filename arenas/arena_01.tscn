@@ -1,8 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://poceglpx5tcu"]
+[gd_scene load_steps=3 format=3 uid="uid://poceglpx5tcu"]
 
-[ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="1_dfc0p"]
-[ext_resource type="PackedScene" uid="uid://myhebkgy4qk3" path="res://characters/Yokotuna.tscn" id="4_1uht4"]
-[ext_resource type="PackedScene" uid="uid://car4covadduuu" path="res://game_objects/TunaSpawner.tscn" id="4_i1jqk"]
+[ext_resource type="Texture2D" uid="uid://dihdfa7r81n5d" path="res://assets/zughy2/Arena_ai_expanded_manual_edit_02.png" id="1_lcq7o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ub7el"]
 radius = 242.002
@@ -11,20 +9,10 @@ radius = 242.002
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-texture = ExtResource("1_dfc0p")
+texture = ExtResource("1_lcq7o")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1, 33)
 shape = SubResource("CircleShape2D_ub7el")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.5, 0.5)
-
-[node name="YokoTuna" parent="." groups=["Yoko"] instance=ExtResource("4_1uht4")]
-position = Vector2(-1, -9)
-
-[node name="TunaSpawner" parent="." instance=ExtResource("4_i1jqk")]
-
-[connection signal="body_exited" from="Area2D" to="YokoTuna" method="_on_area_2d_body_exited"]

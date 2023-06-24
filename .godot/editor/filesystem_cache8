@@ -1,9 +1,11 @@
 2a60927148abd1d33b818b535e306557
-::res://::1687568631
+::res://::1687571664
 icon.svg::CompressedTexture2D::7610020705067284417::1684275612::1684275622::1::::<><>::
 README.md::TextFile::-1::1684275697::0::1::::<><>::
-::res://arenas/::1687570355
-Arena_01.tscn::PackedScene::1081862853134892836::1687570355::0::1::::<><>::uid://d1nns02mmgn2r<>uid://myhebkgy4qk3<>uid://car4covadduuu
+::res://arenas/::1687573861
+Arena_01.tscn::PackedScene::1081862853134892836::1687573861::0::1::::<><>::uid://cxfcxqoabcf0u
+Empty_Arena.tscn::PackedScene::8746793818114745753::1687573861::0::1::::<><>::res://arenas/Empty_Arena.gd
+Empty_Arena.gd::GDScript::-1::1687572430::0::1::::<>Node<>::
 ::res://assets/::1686968399
 ::res://assets/mystic_woods_free_2.1/::1684276840
 read_me.txt::TextFile::-1::1684276840::0::1::::<><>::
@@ -701,11 +703,18 @@ RockPack1080x1080.png::CompressedTexture2D::2118010489836517792::1686968392::168
 ::res://assets/ZeggyGames/AssetPack-V1/Aseprite Files/Tilemap/::1684553462
 ::res://assets/ZeggyGames/AssetPack-V1/Sprite Sheets/::1684553462
 ::res://assets/ZeggyGames/AssetPack-V1/Tilemap/::1684553462
-::res://assets/zughy2/::1684479982
+::res://assets/zughy2/::1687574543
+Arena_ai_expanded.jpg::CompressedTexture2D::8030849399657365230::1687572721::1687572875::1::::<><>::
+Arena_ai_expanded.png::CompressedTexture2D::8060780059735504449::1687573613::1687573615::1::::<><>::
+Arena_ai_expanded_manual_edit.jpg::CompressedTexture2D::7398624458759161191::1687573521::1687573523::1::::<><>::
+Arena_ai_expanded_manual_edit.png::CompressedTexture2D::6397670029078877082::1687573573::1687573575::1::::<><>::
+Arena_ai_expanded_manual_edit_02.png::CompressedTexture2D::7735414574661085107::1687574543::1687574549::1::::<><>::
+Arena_ai_expanded_upscaled.jpg::CompressedTexture2D::6706756740674934365::1687573224::1687573228::1::::<><>::
 Boss arena.png::CompressedTexture2D::9011831717022160139::1684479978::1684479982::1::::<><>::
-::res://characters/::1687570355
+Runway 2023-06-24T02_16_26.152Z Expand Image.jpg::CompressedTexture2D::8312789112378021375::1687572995::1687573042::1::::<><>::
+::res://characters/::1687573861
 Yokotuna.gd::GDScript::-1::1687482498::0::1::::<>RigidBody2DBase<>::
-Yokotuna.tscn::PackedScene::892243420156045656::1687570355::0::1::::<><>::res://characters/Yokotuna.gd<>uid://ckdydugkce4yv<>res://character_components/SlashScript.gd<>uid://bvqk1c7c85gu8<>uid://dsowokq7io7mk<>uid://75vu8hghxu6a<>uid://pu024d3cqnon<>uid://cv44nfnf5vs8r<>uid://dfs2qskucpeou<>uid://xeunt2v0oagy
+Yokotuna.tscn::PackedScene::892243420156045656::1687573861::0::1::::<><>::res://characters/Yokotuna.gd<>uid://ckdydugkce4yv<>res://character_components/SlashScript.gd<>uid://bvqk1c7c85gu8<>uid://dsowokq7io7mk<>uid://75vu8hghxu6a<>uid://pu024d3cqnon<>uid://cv44nfnf5vs8r<>uid://dfs2qskucpeou<>uid://coh45vvjeje1r
 ::res://character_components/::1687570356
 AnimationParametersComponent.gd::GDScript::-1::1686949167::0::1::::<>Node<>::
 AnimationParametersComponent.tscn::PackedScene::2309286846132103958::1685672448::0::1::::<><>::res://character_components/AnimationParametersComponent.gd
@@ -723,6 +732,9 @@ WalkComponent.tscn::PackedScene::8452923851491837714::1685672448::0::1::::<><>::
 ::res://game_objects/::1687570356
 TunaSpawner.gd::GDScript::-1::1687483884::0::1::::<>Node<>::
 TunaSpawner.tscn::PackedScene::4809700921355201044::1687570356::0::1::::<><>::res://game_objects/TunaSpawner.gd
+::res://menus/::1687573861
+main_menu.tscn::PackedScene::6712285344284744175::1687573861::0::1::::<><>::res://menus/main_menu.gd
+main_menu.gd::GDScript::-1::1687572382::0::1::::<>Control<>::
 ::res://objects/::1687570356
 Rock.gd::GDScript::-1::1687482498::0::1::::<>RigidBody2DBase<>::
 Rock.tscn::PackedScene::86859880373222980::1687570356::0::1::::<><>::res://objects/Rock.gd<>uid://dq4vhhv32crjc
