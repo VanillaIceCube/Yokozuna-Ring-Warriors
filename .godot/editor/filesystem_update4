@@ -1,8 +1,5 @@
-res://arenas/Arena_01.tscn
 res://menus/main_menu.tscn
+res://arenas/Arena_01.tscn
 res://characters/Yokotuna.tscn
-res://characters/Yokotuna.gd
 res://game_objects/BaseRoom.tscn
-res://menus/main_menu.gd
-res://game_objects/BaseRoom.gd
-res://character_components/WalkComponent.gd
+res://characters/Yokotuna.gd

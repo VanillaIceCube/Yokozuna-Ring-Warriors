@@ -4,6 +4,7 @@ var parent_node: Node = null # Initializing parent_node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	super._ready()
 	parent_node = get_parent()
 	
 	# connecting the signal for body_exit
