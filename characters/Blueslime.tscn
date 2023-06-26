@@ -1,9 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://b2wq1iyf6yys"]
+[gd_scene load_steps=17 format=3 uid="uid://b2wq1iyf6yys"]
 
 [ext_resource type="Script" path="res://characters/Blueslime.gd" id="1_fbhrr"]
 [ext_resource type="Texture2D" uid="uid://1mjiixeqksd4" path="res://assets/mystic_woods_free_2.1/sprites/characters/slime.png" id="1_fcpqu"]
 [ext_resource type="PackedScene" uid="uid://dsowokq7io7mk" path="res://character_components/WalkComponent.tscn" id="3_sekl4"]
 [ext_resource type="PackedScene" uid="uid://pu024d3cqnon" path="res://character_components/TsuekrattaComponent.tscn" id="4_c4asv"]
+[ext_resource type="PackedScene" uid="uid://bvqk1c7c85gu8" path="res://character_components/PhysicsComponent.tscn" id="5_qiw8s"]
+[ext_resource type="PackedScene" uid="uid://cv44nfnf5vs8r" path="res://character_components/TargetManagerComponent.tscn" id="6_6phje"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_joowa"]
+radius = 7.0
 
 [sub_resource type="Animation" id="Animation_34k8a"]
 resource_name = "BigHop"
@@ -112,15 +117,24 @@ _data = {
 "Walk": SubResource("Animation_8otx1")
 }
 
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_v3h6g"]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_7vh3l"]
+
 [node name="BlueSlime" type="RigidBody2D"]
+mass = 100.0
+gravity_scale = 0.0
 script = ExtResource("1_fbhrr")
 
 [node name="Slime" type="Sprite2D" parent="."]
-position = Vector2(120, 84)
 texture = ExtResource("1_fcpqu")
 hframes = 7
 vframes = 5
 frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("CircleShape2D_joowa")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -128,8 +142,14 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_v3h6g")
 anim_player = NodePath("../AnimationPlayer")
+parameters/playback = SubResource("AnimationNodeStateMachinePlayback_7vh3l")
+
+[node name="PhysicsComponent" parent="." instance=ExtResource("5_qiw8s")]
 
 [node name="WalkComponent" parent="." instance=ExtResource("3_sekl4")]
 
 [node name="TsuekrattaComponent" parent="." instance=ExtResource("4_c4asv")]
+
+[node name="TargetManagerComponent" parent="." instance=ExtResource("6_6phje")]

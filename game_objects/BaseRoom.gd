@@ -8,3 +8,5 @@ func _ready():
 	add_child(Yoko)
 	
 	add_child(preload("res://game_objects/TunaSpawner.tscn").instantiate())
+	
+	add_child(preload("res://characters/Blueslime.tscn").instantiate())
