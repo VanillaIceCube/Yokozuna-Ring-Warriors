@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="1_dfc0p"]
 [ext_resource type="PackedScene" uid="uid://myhebkgy4qk3" path="res://characters/Yokotuna.tscn" id="4_1uht4"]
-[ext_resource type="PackedScene" uid="uid://bobpvvdw2e2x1" path="res://objects/Chest.tscn" id="4_5jtrp"]
+[ext_resource type="PackedScene" uid="uid://bobpvvdw2e2x1" path="res://objects/chest.tscn" id="4_5jtrp"]
 [ext_resource type="PackedScene" uid="uid://car4covadduuu" path="res://game_objects/TunaSpawner.tscn" id="4_i1jqk"]
 
 [node name="Arena_01" type="Node2D"]

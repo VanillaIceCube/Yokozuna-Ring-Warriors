@@ -1,7 +1,7 @@
+Node
 AnimationPlayer
 AnimationTree
 RigidBody2D
-Node
 Timer
 CollisionShape2D
 Area2D
