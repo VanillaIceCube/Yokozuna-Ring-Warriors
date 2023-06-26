@@ -1,22 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://poceglpx5tcu"]
+[gd_scene load_steps=3 format=3 uid="uid://poceglpx5tcu"]
 
-[ext_resource type="Texture2D" uid="uid://d1nns02mmgn2r" path="res://assets/zughy2/Boss arena.png" id="1_dfc0p"]
-[ext_resource type="PackedScene" uid="uid://myhebkgy4qk3" path="res://characters/Yokotuna.tscn" id="4_1uht4"]
-[ext_resource type="PackedScene" uid="uid://bobpvvdw2e2x1" path="res://objects/chest.tscn" id="4_5jtrp"]
-[ext_resource type="PackedScene" uid="uid://car4covadduuu" path="res://game_objects/TunaSpawner.tscn" id="4_i1jqk"]
+[ext_resource type="Texture2D" uid="uid://cwi2fd2x13bxu" path="res://assets/zughy2/Boss arena extended.png" id="1_ueemc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ub7el"]
+radius = 242.002
 
 [node name="Arena_01" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-texture = ExtResource("1_dfc0p")
+texture = ExtResource("1_ueemc")
+
+[node name="ArenaFloorHitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArenaFloorHitbox"]
+position = Vector2(1, 33)
+shape = SubResource("CircleShape2D_ub7el")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
-
-[node name="YokoTuna" parent="." groups=["Yoko"] instance=ExtResource("4_1uht4")]
-
-[node name="TunaSpawner" parent="." instance=ExtResource("4_i1jqk")]
-
-[node name="Chest" parent="." instance=ExtResource("4_5jtrp")]
-position = Vector2(-142, 83)

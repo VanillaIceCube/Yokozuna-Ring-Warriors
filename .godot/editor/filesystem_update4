@@ -1,10 +1,8 @@
-res://characters/Blueslime.tscn
-res://characters/Blueslime.gd
-res://character_scripts/test_node.tscn
+res://menus/main_menu.tscn
+res://arenas/Arena_01.tscn
 res://characters/Yokotuna.tscn
-res://character_components/TargetManagerComponent.tscn
+res://game_objects/BaseRoom.tscn
 res://game_objects/TunaSpawner.tscn
-res://character_components/DeathComponent.tscn
-res://game_objects/ChestSpawner.tscn
-res://character_components/PhysicsComponent.tscn
-res://character_components/WalkComponent.tscn
+res://game_objects/TunaSpawner.gd
+res://characters/Yokotuna.gd
+res://game_objects/BaseRoom.gd

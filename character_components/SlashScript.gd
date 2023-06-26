@@ -3,9 +3,10 @@ extends Area2D
 var parent_node: Node = null # Initializing parent_node
 
 var attack_damage := 10
-var knockback_force := 800
+var knockback_force := 40000
 var attack_range:= 30
-var attack_time:= 1
+var attack_time:= .5
+var slash_ready:= false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,22 +23,18 @@ func _on_body_entered(body):
 		if child.has_method("get_hit"):
 			var attack = Attack.new()
 			attack.attack_damage = attack_damage
-			attack.knockback_force = knockback_force
+			attack.knockback_force = knockback_force * (1 + parent_node.linear_velocity.length() * 0.01)
 			attack.attack_position = parent_node.global_position
 			child.get_hit(attack)
 
 func _on_timer_timeout():
+	slash_ready = true
 	if parent_node.verbosity:
 		print("YokoTuna can attack again!")
-
-# Whenever an input is pressed
-func _input(event):
-	# Pressing R swings sword
-	if event.is_action_pressed("swing_sword"):
-		slash()
 
 func slash():
 	if $Timer.is_stopped():
 		get_node("../AnimationParametersComponent").state_machine.travel("slash")
 		if get_node("../AnimationParametersComponent").state_machine.get_current_node() == "slash":
+			slash_ready = false
 			$Timer.start()

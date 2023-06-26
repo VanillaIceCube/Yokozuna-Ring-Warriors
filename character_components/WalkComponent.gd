@@ -3,8 +3,7 @@ extends Node
 var parent_node: Node = null # Initializing parent_node
 
 # Movement related
-var move_speed: float = 200
-var stop_radius: float = 15
+var move_speed: float = 10000
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,14 +17,8 @@ func _process(delta):
 		parent_node.distance_to_target = parent_node.global_position.distance_to(parent_node.target_position)
 		
 		# This is how we stop
-		if parent_node.distance_to_target <= stop_radius:
+		if parent_node.distance_to_target <= parent_node.stop_radius:
 			parent_node.target_direction = Vector2.ZERO
 		
 		# "Walk" towards your target position
 		parent_node.apply_central_force(delta*100*parent_node.target_direction * move_speed)
-
-# This is a temporary way to choose the target position
-func _input(event: InputEvent):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		parent_node.target_position = parent_node.get_global_mouse_position()
-		print("Clicked position in world coordinates:", parent_node.target_position)

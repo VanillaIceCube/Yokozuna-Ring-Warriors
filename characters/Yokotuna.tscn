@@ -770,6 +770,9 @@ graph_offset = Vector2(-28, -18)
 size = Vector2(25.25, 24)
 
 [node name="YokoTuna" type="RigidBody2D"]
+mass = 80.0
+center_of_mass_mode = 1
+center_of_mass = Vector2(0, 12.5)
 script = ExtResource("1_ji3i0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -803,10 +806,9 @@ parameters/walking/blend_position = Vector2(-0.60361, -0.187336)
 [node name="WalkComponent" parent="." instance=ExtResource("4_wibtp")]
 
 [node name="AnimationParametersComponent" parent="." instance=ExtResource("5_56mg0")]
+animation_list = "walking, idle, slash, death"
 
 [node name="TsuekrattaComponent" parent="." instance=ExtResource("7_bof10")]
-
-[node name="TargetManagerComponent" parent="." instance=ExtResource("7_fdma2")]
 
 [node name="DeathComponent" parent="." instance=ExtResource("8_7hvvn")]
 
@@ -822,6 +824,8 @@ shape = SubResource("RectangleShape2D_h6wxw")
 [node name="Timer" type="Timer" parent="Slash"]
 one_shot = true
 autostart = true
+
+[node name="TargetManagerComponent" parent="." instance=ExtResource("7_fdma2")]
 
 [connection signal="body_entered" from="Slash" to="Slash" method="_on_body_entered"]
 [connection signal="timeout" from="Slash/Timer" to="Slash" method="_on_timer_timeout"]
