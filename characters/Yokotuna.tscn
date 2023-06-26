@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://myhebkgy4qk3"]
+[gd_scene load_steps=58 format=3 uid="uid://myhebkgy4qk3"]
 
 [ext_resource type="Script" path="res://characters/Yokotuna.gd" id="1_ji3i0"]
 [ext_resource type="Texture2D" uid="uid://ckdydugkce4yv" path="res://assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_skil2"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://pu024d3cqnon" path="res://character_components/TsuekrattaComponent.tscn" id="7_bof10"]
 [ext_resource type="PackedScene" uid="uid://cv44nfnf5vs8r" path="res://character_components/TargetManagerComponent.tscn" id="7_fdma2"]
 [ext_resource type="PackedScene" uid="uid://dfs2qskucpeou" path="res://character_components/DeathComponent.tscn" id="8_7hvvn"]
-[ext_resource type="PackedScene" uid="uid://coh45vvjeje1r" path="res://power_ups/Dash.tscn" id="9_if288"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6m82e"]
 radius = 7.0
@@ -825,8 +824,6 @@ shape = SubResource("RectangleShape2D_h6wxw")
 [node name="Timer" type="Timer" parent="Slash"]
 one_shot = true
 autostart = true
-
-[node name="Dash" parent="." instance=ExtResource("9_if288")]
 
 [node name="TargetManagerComponent" parent="." instance=ExtResource("7_fdma2")]
 

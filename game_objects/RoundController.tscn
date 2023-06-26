@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtwvu8r82vgp0"]
+
+[ext_resource type="Script" path="res://game_objects/RoundController.gd" id="1_sjmc8"]
+
+[node name="RoundController" type="Node"]
+script = ExtResource("1_sjmc8")
